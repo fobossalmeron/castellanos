@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Bolsa de trabajo</title>
+  <title>Contacto</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com//bolsadetrabajo/">
+  <link rel="canonical" href="http://yourdomain.com//contacto/">
   <link rel="alternate" type="application/rss+xml" title="Castellanos & asociados" href="http://yourdomain.com//feed.xml">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
 
@@ -91,10 +91,65 @@
     <main >
         <article class="post">
 
-  <h1 class="pagetitle">Bolsa de trabajo</h1>
+  <h1 class="pagetitle">Contacto</h1>
 
   <div class="post-content">
-    <p>Areas</p>
+    <section class="cards">
+<div class="halfcard">
+Teléfonos: 55 00 00 00 | 55 00 00 00
+
+<form action="https://formspree.io/contacto@castellanosasociados.com" method="POST">
+    <label for="name">Nombre</label>
+      <input type="text" name="name" /><br />
+    <label for="name">Email</label>
+      <input type="email" name="_replyto" /><br />
+    <label for="message">Mensaje</label>
+      <textarea type="text" name="message"></textarea><br />
+    <input class="submitbutton" type="submit" value="Enviar" />
+</form>
+
+</div>
+<div class="halfcard">
+<div id="map"></div>
+</div>
+</section>
+
+<script>
+      function initMap() {
+        var locCastellanos  = new google.maps.LatLng(19.372528, -99.175753);
+        var locCastellanosOptions = {
+          zoom: 16,
+          center: locCastellanos,
+          scrollwheel: false
+        };
+        var mapCastellanos = new google.maps.Map(document.getElementById("map"), locCastellanosOptions);
+        var iconCastellanos = {
+             url: '/img/marker.svg',
+             size: new google.maps.Size(30,120),
+             origin: new google.maps.Point(10,0),
+             anchor: new google.maps.Point(10,75)
+       };
+        var locCastellanosMarker = new google.maps.Marker({
+          position: locCastellanos,
+          map: mapCastellanos,
+          title: "Castellanos & Asociados",
+          // animation: google.maps.Animation.DROP,
+          icon: iconCastellanos
+        });
+        locCastellanosMarker.addListener('click', toggleBounce);
+        function toggleBounce() {
+          if (locCastellanosMarker.getAnimation() !== null) {
+            locCastellanosMarker.setAnimation(null);
+          } else {
+            locCastellanosMarker.setAnimation(google.maps.Animation.BOUNCE);
+          }
+        }
+      }
+    </script>
+
+<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLQc8Mu-fjVVgkBV77SKMaYiGJV0jaRQw&amp;callback=initMap">
+</script>
+
 
   </div>
 
