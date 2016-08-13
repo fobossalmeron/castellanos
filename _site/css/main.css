@@ -230,6 +230,7 @@ header {
 footer {
   padding: 30px 0;
   float: left;
+  width: 100%;
   box-sizing: border-box;
   background-color: rgba(66, 66, 66, 0.05); }
 
@@ -282,7 +283,7 @@ footer {
  * Page content
  */
 main {
-  margin-top: 80px;
+  margin-top: 82px;
   width: 100%;
   clear: both;
   float: left;
@@ -292,42 +293,69 @@ main {
 section {
   float: left;
   width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10%; }
+  box-sizing: border-box; }
+  section:nth-last-child(1) {
+    margin-bottom: 10%; }
 
 .homephoto {
-  background-image: url("/img/fondoprincipal.jpg");
+  background-image: url("/img/fondoprincipal2.png");
   background-position: top left;
-  background-size: 1960px;
-  padding: 8%; }
+  background-size: cover;
+  padding: 25%;
+  position: fixed;
+  z-index: -1;
+  width: 94%; }
 
 #homelogo {
-  height: 250px;
-  padding-top: 6%;
+  height: 170px;
   position: relative;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  margin-top: 5%; }
 
 #hometitle {
-  font-size: 50px;
+  font-size: 40px;
   width: 100%;
   text-align: center;
-  color: #FCFFFC; }
+  color: #424242; }
+
+.tels a:before {
+  height: 30px;
+  background-color: #424242;
+  opacity: 0.1;
+  width: 1px;
+  content: ' ';
+  float: right;
+  clear: none;
+  display: block;
+  margin-top: 14px;
+  margin-left: 15px; }
 
 button {
-  padding: 1%;
   font-size: 16px;
   font-family: inherit;
   background-color: transparent;
   border: none;
   color: #FCFFFC;
   position: relative;
+  margin-bottom: 20%;
   left: 50%;
   transform: translateX(-50%); }
   button a {
-    color: #FCFFFC; }
+    color: #424242; }
+    button anth-first-child::before {
+      height: 30px;
+      background-color: #424242;
+      opacity: 0.1;
+      width: 1px;
+      content: ' ';
+      float: right;
+      clear: none;
+      display: block;
+      margin-top: 14px;
+      margin-left: 15px; }
     button a:hover {
-      color: #FCFFFC; }
+      color: #424242; }
 
 .cards p {
   float: left;
@@ -343,16 +371,36 @@ button {
   line-height: 1.2; }
 
 .halfcard {
-  width: 50%;
+  width: 45%;
   float: left;
   box-sizing: border-box;
   padding-top: 10%;
   padding-left: 10%; }
 
+.thirdcard {
+  width: 33%;
+  padding: 10% 0 0% 5%;
+  height: 400px; }
+
+.rightcard {
+  padding-left: 0;
+  padding-right: 10%;
+  margin-right: 5%; }
+
 .cardimg1 {
-  background-image: url(/img/fondoprincipal.jpg);
-  background-size: cover;
-  height: 550px; }
+  height: 550px;
+  width: 50%;
+  margin-bottom: 10%; }
+
+.cardimg2 {
+  background-image: url(/img/objetivo.jpg);
+  background-size: contain;
+  height: 550px;
+  width: 45%; }
+
+.spanspacer {
+  float: left;
+  clear: both; }
 
 .post-list {
   margin-left: 0;
@@ -390,9 +438,14 @@ input, textarea {
 .pagetitle {
   font-size: 70px;
   text-align: left;
-  line-height: 1.2;
+  line-height: 0.4;
   font-weight: bold;
-  margin: 10% 0 0 10%; }
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  padding: 10% 0 0 10%;
+  margin: 0;
+  box-sizing: border-box; }
 
 #map {
   width: 100%;
