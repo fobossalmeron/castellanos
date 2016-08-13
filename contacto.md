@@ -2,11 +2,12 @@
 layout: page
 title: Contacto
 permalink: contacto/
+photo: fondoaboutus
 ---
 
 <section class="cards">
 <div class="halfcard">
-Teléfonos: 55 00 00 00 | 55 00 00 00
+<p>Teléfonos: <a href="tel:{{ site.tel1}}"> {{site.tel1}}</a> | <a href="tel:{{ site.tel2}}">{{site.tel2}}</a></p>
 
 <form action="https://formspree.io/{{ site.email }}" method="POST">
     <label for="name">Nombre</label>

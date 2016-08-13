@@ -2,6 +2,7 @@
 layout: page
 title: Abogados
 permalink: /abogados/
+photo: abogados
 abogados:
   - nombre: Gustavo Castellanos Díaz del Rivero
     descripcion: Exfuncionario del Poder Judicial Federal, siempre adscrito a juzgados de distrito en materia administrativa, con experiencia de treinta años en litigios contenciosos administrativos y constitucionales.
@@ -33,7 +34,7 @@ abogados:
 <section class="thirdcard">
 <h2>{{ abogado.nombre }}</h2>
 <p>{{ abogado.descripcion }}</p>
-<span><b>{{ abogado.correo }}</b>@castellanosasociados.com</span>
+<span><b>{{ abogado.correo }}</b> @castellanosasociados.com</span>
 </section>
 {% endfor %}
 

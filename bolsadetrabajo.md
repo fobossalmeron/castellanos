@@ -2,6 +2,7 @@
 layout: page
 title: Bolsa de trabajo
 permalink: /bolsadetrabajo/
+photo: fondoaboutus
 ---
 <section class="cards">
 <div class="halfcard">

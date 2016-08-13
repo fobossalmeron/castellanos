@@ -1,37 +1,24 @@
-<footer class="site-footer">
+<footer {% if page.main == true %} class="footerhome" {% endif %}>
 
   <div class="wrapper">
-
-    <h2 class="footer-heading"><b>Castellanos</b>asociados</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>Teléfonos: {{site.tel1}} | {{site.tel2}}</li>
         </ul>
     </div>
 
       <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
+        <img id="footerlogo" src="{{ site.baseurl }}img/logo.svg">
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-        <p><em><b>© CASTELLANOS & ASOCIADOS</b><br>Todos los derechos reservados, {{ site.time | date: '%Y' }}.<br>
-        Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</em></p>
+        <p style="display:none;">{{ site.description }}</p>
+        <p><em><b>© Castellanos & asociados</b><br>Todos los derechos reservados, {{ site.time | date: '%Y' }}.</em><br>
+        Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</p>
       </div>
     </div>
 
