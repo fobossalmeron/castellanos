@@ -42,7 +42,7 @@
 
     <header class="site-header">
 
-    <a class="site-title" href="/"><b>Castellanos</b><i>&</i><b>asociados</b></a>
+    <a class="site-title" href="/"><img id="headerlogo" src="/img/type.svg"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -88,15 +88,29 @@
 
 
     <main  class="mainhome" >
-        <div class="homephoto"></div>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+<!--script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script>
+// init controller
+var controller = new ScrollMagic.Controller();
+</script>
+
+<div class="homephoto"></div>
 
 <section>
-  <img id="homelogo" src="/img/logo.svg">
-  <h1 id="hometitle"><b>Castellanos</b><i>&</i><b>asociados</b></h1>
+  <div id="logocontainer">
+    <img id="homelogo" src="/img/logo.svg">
+    <img id="hometype" src="/img/type.svg">
+    <h1 id="hometitle"><b>Castellanos & asociados</h1>
 
-  <button class="tels">
-    <a href="tel:(55) 55 24 24 14">(55) 55 24 24 14</a>  <a href="tel:(55) 55 34 71 77">(55) 55 34 71 77</a>
-  </button>
+    <div class="tels">
+      <a href="tel:(55) 55 24 24 14">(55) 55 24 24 14</a>  <a href="tel:(55) 55 34 71 77">(55) 55 34 71 77</a>
+    </div>
+  </div>
+
 </section>
 
 <section>
@@ -138,6 +152,24 @@
     </div>
 </section>
 
+<script>
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#logocontainer"
+        })
+        .setClassToggle("#hometype", "disapear") // add class toggle
+    //    .setClassToggle("#logocontainer", "aside") // add class toggle
+        .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+        .addTo(controller);
+
+        // get the current triggerHook value
+        var triggerHook = scene.triggerHook();
+
+        // set a new triggerHook using a string
+        scene.triggerHook("onLeave");
+        // set a new triggerHook using a number
+        scene.triggerHook(0.13);
+</script>
+
     </main>
 
     <footer  class="footerhome" >
@@ -154,7 +186,7 @@
     </div>
 
       <div class="footer-col footer-col-2">
-        <img id="footerlogo" src="/img/logo.svg">
+        <img class="footerlogo" src="/img/logo.svg">
       </div>
 
       <div class="footer-col footer-col-3">
