@@ -154,7 +154,7 @@ header {
   padding: 1% 5%;
   box-sizing: border-box;
   color: #424242;
-  z-index: 2; }
+  z-index: 3; }
 
 .site-title {
   font-size: 24px;
@@ -247,7 +247,8 @@ footer {
 .footerhome {
   background-color: #FCFFFC;
   margin-top: 0%;
-  background-image: none; }
+  background-image: none;
+  margin-top: 20%; }
 
 .footerlogo {
   width: 100%;
@@ -315,10 +316,17 @@ main {
 section {
   float: left;
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-top: 13%;
+  transition: 0.3s ease; }
 
 .mainhome section {
-  margin-bottom: 20%; }
+  opacity: 0; }
+
+.homesection {
+  margin-top: 0;
+  padding-top: 0;
+  opacity: 1 !important; }
 
 .homephoto {
   background-image: url("/img/fondoprincipal2.png");
@@ -342,39 +350,48 @@ section {
   float: left;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
-  margin-top: 5%; }
+  transform: translateX(-50%) translateZ(0);
+  margin-top: 5%;
+  transition: 0.5s ease;
+  z-index: 2; }
 
-.aside {
-  position: fixed !important;
-  right: 3% !important;
-  bottom: 3% !important; }
+#asidelogo {
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  display: none;
+  width: 140px;
+  height: 150px; }
+
+.appear {
+  display: block !important;
+  opacity: 1 !important; }
 
 .disapear {
-  opacity: 0; }
+  opacity: 0;
+  display: block; }
 
-#homelogo {
+.homelogo {
   width: 35%;
   float: left;
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
 
-#hometype {
+.hometype {
   width: 100%;
   float: left;
-  position: relative;
-  transition: 0.5s ease; }
+  position: relative; }
+
+.hometitle {
+  position: absolute;
+  top: -100%;
+  left: -100%; }
 
 #headerlogo {
   height: 56px;
   padding: 2px;
   box-sizing: border-box; }
-
-#hometitle {
-  position: absolute;
-  top: -100%;
-  left: -100%; }
 
 .tels {
   font-size: 16px;
@@ -570,6 +587,25 @@ textarea {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+#data1 h2, #data3 h2 {
+  transform: translateX(-150%);
+  transition: 0.5s ease; }
+
+#data1 p, #data3 p {
+  transform: translateY(-150%);
+  transition: 0.5s ease; }
+
+#data2 h2, #data4 h2 {
+  transform: translateX(150%);
+  transition: 0.5s ease; }
+
+#data2 p, #data4, h2 {
+  transform: translateY(150%);
+  transition: 0.5s ease; }
+
+.slidein {
+  transform: translateX(0) translateY(0) !important; }
 
 /**
  * Syntax highlighting styles
