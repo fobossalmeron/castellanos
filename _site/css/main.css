@@ -234,7 +234,7 @@ header {
  * Site footer
  */
 footer {
-  padding: 10% 0 5% 0;
+  padding: 5% 0 10% 0;
   float: left;
   margin: 10% 3% 0 3%;
   width: 94%;
@@ -243,12 +243,15 @@ footer {
   background-image: url("/img/fondoprincipal2.png");
   background-position: top left;
   background-size: cover; }
+  footer a, footer a:visited {
+    color: #424242; }
 
 .footerhome {
   background-color: #FCFFFC;
   margin-top: 0%;
   background-image: none;
-  margin-top: 20%; }
+  margin-top: 20%;
+  font-weight: normal; }
 
 .footerlogo {
   width: 100%;
@@ -275,18 +278,21 @@ footer {
   padding-left: 15px; }
 
 .footer-col-1 {
-  width: -webkit-calc(37% - (30px / 2));
-  width: calc(37% - (30px / 2));
-  padding-top: 5%; }
+  width: -webkit-calc(30% - (30px / 2));
+  width: calc(30% - (30px / 2));
+  padding-top: 9%;
+  box-sizing: border-box; }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2)); }
+  width: -webkit-calc(5% - (30px / 2));
+  width: calc(5% - (30px / 2));
+  padding-left: 0; }
 
 .footer-col-3 {
-  width: -webkit-calc(43% - (30px / 2));
-  width: calc(43% - (30px / 2));
-  padding-top: 5%; }
+  width: -webkit-calc(60% - (30px / 2));
+  width: calc(60% - (30px / 2));
+  padding: 9% 12% 0 0;
+  box-sizing: border-box; }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
@@ -319,9 +325,6 @@ section {
   box-sizing: border-box;
   padding-top: 13%;
   transition: 0.3s ease; }
-
-.mainhome section {
-  opacity: 0; }
 
 .homesection {
   margin-top: 0;
@@ -364,12 +367,10 @@ section {
   height: 150px; }
 
 .appear {
-  display: block !important;
   opacity: 1 !important; }
 
 .disapear {
-  opacity: 0;
-  display: block; }
+  opacity: 0; }
 
 .homelogo {
   width: 35%;
@@ -588,21 +589,30 @@ textarea {
       .post-content h4 {
         font-size: 18px; } }
 
-#data1 h2, #data3 h2 {
-  transform: translateX(-150%);
-  transition: 0.5s ease; }
+.mainhome section {
+  opacity: 0; }
+  .mainhome section p, .mainhome section h2 {
+    transition: 0.5s ease; }
 
-#data1 p, #data3 p {
-  transform: translateY(-150%);
-  transition: 0.5s ease; }
+#data1 h2 {
+  transform: translateY(-150%); }
+#data1 p {
+  transform: translateY(150%); }
 
-#data2 h2, #data4 h2 {
-  transform: translateX(150%);
-  transition: 0.5s ease; }
+#data2 h2 {
+  transform: translateY(-150%); }
+#data2 p {
+  transform: translateY(150%); }
 
-#data2 p, #data4, h2 {
-  transform: translateY(150%);
-  transition: 0.5s ease; }
+#data3 h2 {
+  transform: translateY(-150%); }
+#data3 p {
+  transform: translateY(150%); }
+
+#data4 h2 {
+  transform: translateY(-150%); }
+#data4 p {
+  transform: translateY(150%); }
 
 .slidein {
   transform: translateX(0) translateY(0) !important; }

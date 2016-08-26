@@ -111,38 +111,7 @@
 </div>
 </section>
 
-<script>
-      function initMap() {
-        var locCastellanos  = new google.maps.LatLng(19.372528, -99.175753);
-        var locCastellanosOptions = {
-          zoom: 16,
-          center: locCastellanos,
-          scrollwheel: false
-        };
-        var mapCastellanos = new google.maps.Map(document.getElementById("map"), locCastellanosOptions);
-        var iconCastellanos = {
-             url: '/img/marker.svg',
-             size: new google.maps.Size(30,120),
-             origin: new google.maps.Point(10,0),
-             anchor: new google.maps.Point(10,75)
-       };
-        var locCastellanosMarker = new google.maps.Marker({
-          position: locCastellanos,
-          map: mapCastellanos,
-          title: "Castellanos & Asociados",
-          // animation: google.maps.Animation.DROP,
-          icon: iconCastellanos
-        });
-        locCastellanosMarker.addListener('click', toggleBounce);
-        function toggleBounce() {
-          if (locCastellanosMarker.getAnimation() !== null) {
-            locCastellanosMarker.setAnimation(null);
-          } else {
-            locCastellanosMarker.setAnimation(google.maps.Animation.BOUNCE);
-          }
-        }
-      }
-    </script>
+<script src="/js/map.js"></script>
 
 <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLQc8Mu-fjVVgkBV77SKMaYiGJV0jaRQw&amp;callback=initMap">
 </script>
@@ -159,8 +128,9 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>Castellanos & asociados</li>
-          <li><a href="mailto:contacto@castellanosasociados.com">contacto@castellanosasociados.com</a></li>
+          <li><a href="mailto:contacto@castellanosasociados.com"><b>contacto@castellanosasociados.com</b></a></li>
           <li>Teléfonos: (55) 55 24 24 14 | (55) 55 34 71 77</li>
+            <li><em><b>© Castellanos & asociados</b><br>Todos los derechos reservados, 2016.</em></li>
         </ul>
     </div>
 
@@ -169,8 +139,10 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p style="display:none;">Firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo y constitucional.</p>
-        <p><em><b>© Castellanos & asociados</b><br>Todos los derechos reservados, 2016.</em><br>
+        <p>Somos una firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo
+          y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial
+          Federal, así como del Tribunal Federal de Justicia Administrativa.</p>
+          <br>
         Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</p>
       </div>
     </div>
