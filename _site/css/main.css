@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 "Lora", serif;
   color: #424242;
-  background-color: #FCFFFC;
+  background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 0; }
+  margin-bottom: 15px; }
 
 /**
  * Images
@@ -67,12 +67,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #424242;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #1c1c1c; }
   a:hover {
-    color: #111;
+    color: #424242;
     text-decoration: underline; }
 
 /**
@@ -115,6 +115,9 @@ pre {
 .wrapper {
   margin-right: auto;
   margin-left: auto;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  position: absolute;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
@@ -234,24 +237,20 @@ header {
  * Site footer
  */
 footer {
-  padding: 5% 0 10% 0;
   float: left;
   margin: 10% 3% 0 3%;
   width: 94%;
   box-sizing: border-box;
-  background-color: rgba(140, 140, 140, 0.1);
-  background-image: url("/img/fondoprincipal2.png");
-  background-position: top left;
-  background-size: cover; }
+  overflow: hidden;
+  position: relative;
+  background-color: #FCFFFC; }
   footer a, footer a:visited {
     color: #424242; }
 
 .footerhome {
-  background-color: #FCFFFC;
-  margin-top: 0%;
-  background-image: none;
   margin-top: 20%;
-  font-weight: normal; }
+  z-index: 3;
+  position: relative; }
 
 .footerlogo {
   width: 100%;
@@ -323,12 +322,11 @@ section {
   float: left;
   width: 100%;
   box-sizing: border-box;
-  padding-top: 13%;
   transition: 0.3s ease; }
 
 .homesection {
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 0 !important;
   opacity: 1 !important; }
 
 .homephoto {
@@ -360,11 +358,19 @@ section {
 
 #asidelogo {
   position: fixed;
+  transition: 0.5s ease;
   right: 3%;
   bottom: 3%;
-  display: none;
-  width: 140px;
-  height: 150px; }
+  width: 125px;
+  z-index: 2;
+  height: 200px; }
+  #asidelogo img {
+    width: 65%;
+    float: left; }
+  #asidelogo a {
+    color: #424242;
+    float: left;
+    clear: both; }
 
 .appear {
   opacity: 1 !important; }
@@ -514,7 +520,7 @@ section {
 
 .post-meta {
   font-size: 14px;
-  color: #828282; }
+  color: #424242; }
 
 .post-link {
   display: block;
@@ -590,9 +596,13 @@ textarea {
         font-size: 18px; } }
 
 .mainhome section {
-  opacity: 0; }
+  opacity: 0;
+  padding-top: 13%; }
   .mainhome section p, .mainhome section h2 {
     transition: 0.5s ease; }
+
+#asidelogo {
+  transform: translateY(150%); }
 
 #data1 h2 {
   transform: translateY(-150%); }
@@ -616,6 +626,34 @@ textarea {
 
 .slidein {
   transform: translateX(0) translateY(0) !important; }
+
+.parallaxParent {
+  width: 100%;
+  height: 240px;
+  float: left;
+  overflow: hidden;
+  position: relative; }
+
+.parallaxChild {
+  height: 300px;
+  position: relative;
+  width: 100%;
+  top: -115%;
+  background-size: cover; }
+
+.footerParallaxChild {
+  height: 460px;
+  position: relative;
+  width: 100%;
+  top: -75%;
+  background-size: cover; }
+
+.footerParallaxParent {
+  width: 100%;
+  height: 420px;
+  float: left;
+  overflow: hidden;
+  position: relative; }
 
 /**
  * Syntax highlighting styles

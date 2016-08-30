@@ -2,7 +2,7 @@
 layout: page
 title: Nosotros
 permalink: /nosotros/
-photo: fondoaboutus
+photo: nosotros
 ---
 
 <section class="halfcard rightcard">

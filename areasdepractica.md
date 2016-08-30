@@ -2,7 +2,7 @@
 layout: page
 title: Áreas de práctica
 permalink: /areasdepractica/
-photo: fondoaboutus
+photo: areas
 ---
 
 <section class="cards">

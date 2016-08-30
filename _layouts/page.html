@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-  <section class="pagephoto" style="background-image: url('{{ site.baseurl}}img/{{page.photo}}.png')"></section>
+  <div id="parallax1" class="parallaxParent">
+  	<div class="parallaxChild" style="background-image: url({{ site.baseurl}}img/{{page.photo}}.png);"></div>
+  </div>
   <h1 class="pagetitle">{{ page.title }}</h1>
 
     {{ content }}

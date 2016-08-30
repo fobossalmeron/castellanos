@@ -35,6 +35,12 @@
   <meta name="msapplication-wide310x150logo" content="/img/favicons/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="/img/favicons/mstile-310x310.png" />
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+  <!--script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
 </head>
 
 
@@ -88,7 +94,9 @@
 
 
     <main >
-          <section class="pagephoto" style="background-image: url('/img/fondoaboutus.png')"></section>
+          <div id="parallax1" class="parallaxParent">
+  	<div class="parallaxChild" style="background-image: url(/img/contacto.png);"></div>
+  </div>
   <h1 class="pagetitle">Contacto</h1>
 
     <section class="cards">
@@ -120,7 +128,20 @@
 
     </main>
 
-    <footer >
+    <footer id="footer" >
+
+  <!--script>
+  // build scenes
+  new ScrollMagic.Scene({triggerElement: "#footer"})
+          .setTween("#footer > div", {y: "200%", ease: Linear.easeNone})
+          .addIndicators()
+          .addTo(parallaxController);
+</script-->
+
+<div id="parallax2" class="footerParallaxParent">
+  <div class="footerParallaxChild"  style="background-image: url(/img/fondoprincipal2.png);">
+  </div>
+</div>
 
   <div class="wrapper">
 
@@ -143,12 +164,14 @@
           y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial
           Federal, así como del Tribunal Federal de Justicia Administrativa.</p>
           <br>
-        Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</p>
+        Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</a>
+        </p>
       </div>
     </div>
 
   </div>
 
+  <script src="/js/parallax.js"></script>
 </footer>
 
 

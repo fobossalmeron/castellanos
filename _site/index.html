@@ -35,6 +35,12 @@
   <meta name="msapplication-wide310x150logo" content="/img/favicons/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="/img/favicons/mstile-310x310.png" />
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+  <!--script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
 </head>
 
 
@@ -88,30 +94,22 @@
 
 
     <main  class="mainhome" >
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-<!--script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script-->
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-
-<div class="homephoto"></div>
+        <div class="homephoto"></div>
 <section class="homesection">
   <div id="logocontainer">
     <img class="homelogo" src="/img/logo.svg">
     <img class="hometype" src="/img/type.svg">
-    <h1 class="hometitle"><b>Castellanos & asociados</h1>
-    <div class="tels">
-      <a href="tel:(55) 55 24 24 14">(55) 55 24 24 14</a>  <a href="tel:(55) 55 34 71 77">(55) 55 34 71 77</a>
-    </div>
-  </div>
-
-  <div id="asidelogo">
-    <img class="homelogo" src="/img/logo.svg">
+    <h1 class="hometitle"><b>Castellanos & asociados</b></h1>
     <div class="tels">
       <a href="tel:(55) 55 24 24 14">(55) 55 24 24 14</a>  <a href="tel:(55) 55 34 71 77">(55) 55 34 71 77</a>
     </div>
   </div>
 </section>
+
+<div id="asidelogo">
+  <img src="/img/logo.svg">
+  <a href="tel:(55) 55 24 24 14">(55) 55 24 24 14</a>  <a href="tel:(55) 55 34 71 77">(55) 55 34 71 77</a>
+</div>
 
 <section id="data1">
   <div class="introcard left thirdline">
@@ -156,7 +154,20 @@
 
     </main>
 
-    <footer  class="footerhome" >
+    <footer id="footer"  class="footerhome" >
+
+  <!--script>
+  // build scenes
+  new ScrollMagic.Scene({triggerElement: "#footer"})
+          .setTween("#footer > div", {y: "200%", ease: Linear.easeNone})
+          .addIndicators()
+          .addTo(parallaxController);
+</script-->
+
+<div id="parallax2" class="footerParallaxParent">
+  <div class="footerParallaxChild" >
+  </div>
+</div>
 
   <div class="wrapper">
 
@@ -179,12 +190,14 @@
           y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial
           Federal, así como del Tribunal Federal de Justicia Administrativa.</p>
           <br>
-        Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</p>
+        Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</a>
+        </p>
       </div>
     </div>
 
   </div>
 
+  <script src="/js/parallax.js"></script>
 </footer>
 
 

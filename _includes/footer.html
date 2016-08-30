@@ -1,4 +1,17 @@
-<footer {% if page.main == true %} class="footerhome" {% endif %}>
+<footer id="footer" {% if page.main == true %} class="footerhome" {% endif %}>
+
+  <!--script>
+  // build scenes
+  new ScrollMagic.Scene({triggerElement: "#footer"})
+          .setTween("#footer > div", {y: "200%", ease: Linear.easeNone})
+          .addIndicators()
+          .addTo(parallaxController);
+</script-->
+
+<div id="parallax2" class="footerParallaxParent">
+  <div class="footerParallaxChild" {% if page.main != true %} style="background-image: url({{ site.baseurl}}img/fondoprincipal2.png);"{% endif%}>
+  </div>
+</div>
 
   <div class="wrapper">
 
@@ -21,10 +34,12 @@
           y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial
           Federal, así como del Tribunal Federal de Justicia Administrativa.</p>
           <br>
-        Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</p>
+        Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</a>
+        </p>
       </div>
     </div>
 
   </div>
 
+  <script src="{{site.baseurl}}js/parallax.js"></script>
 </footer>

@@ -2,7 +2,7 @@
 layout: page
 title: Contacto
 permalink: contacto/
-photo: fondoaboutus
+photo: contacto
 ---
 
 <section class="cards">

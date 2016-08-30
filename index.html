@@ -2,30 +2,23 @@
 layout: default
 main: true
 ---
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-<!--script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script-->
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 
 <div class="homephoto"></div>
 <section class="homesection">
   <div id="logocontainer">
     <img class="homelogo" src="{{ site.baseurl }}img/logo.svg">
     <img class="hometype" src="{{ site.baseurl }}img/type.svg">
-    <h1 class="hometitle"><b>Castellanos & asociados</h1>
-    <div class="tels">
-      <a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a>  <a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a>
-    </div>
-  </div>
-
-  <div id="asidelogo">
-    <img class="homelogo" src="{{ site.baseurl }}img/logo.svg">
+    <h1 class="hometitle"><b>Castellanos & asociados</b></h1>
     <div class="tels">
       <a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a>  <a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a>
     </div>
   </div>
 </section>
+
+<div id="asidelogo">
+  <img src="{{ site.baseurl }}img/logo.svg">
+  <a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a>  <a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a>
+</div>
 
 <section id="data1">
   <div class="introcard left thirdline">
