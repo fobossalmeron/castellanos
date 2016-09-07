@@ -238,7 +238,7 @@ header {
  */
 footer {
   float: left;
-  margin: 10% 3% 0 3%;
+  margin: 0 3% 0 3%;
   width: 94%;
   box-sizing: border-box;
   overflow: hidden;
@@ -317,6 +317,14 @@ main {
   float: left;
   box-sizing: border-box;
   padding: 0 3%; }
+
+.pagewrapper {
+  padding: 10%;
+  min-height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  width: 100%; }
 
 section {
   float: left;
@@ -487,26 +495,29 @@ section {
   line-height: 1.2; }
 
 .halfcard {
-  width: 45%;
+  width: 50%;
   float: left;
   box-sizing: border-box;
-  padding-top: 10%;
-  padding-left: 10%; }
+  padding-top: 10%; }
+  .halfcard:nth-child(2n+2) {
+    padding-left: 5%; }
+  .halfcard:nth-child(2n+1) {
+    padding-right: 5%; }
+
+.rightcard {
+  padding-top: 0; }
 
 .thirdcard {
   width: 33%;
-  padding: 10% 0 0% 5%;
-  height: 400px; }
+  padding-top: 10%;
+  min-height: 400px; }
   .thirdcard:nth-child(3n+1) {
-    padding-left: 10%; }
+    padding-right: 2%;
+    padding-left: 2%; }
   .thirdcard:nth-child(3n) {
-    padding-right: 10%;
-    padding-left: 0; }
+    padding-right: 4%; }
   .thirdcard:nth-child(3n+2) {
-    padding-right: 5%; }
-
-.card {
-  padding: 0 10%; }
+    padding-left: 4%; }
 
 .spanspacer {
   float: left;
@@ -554,8 +565,7 @@ textarea {
   line-height: 1.2;
   font-weight: bold;
   float: left;
-  margin: 0 10% 0 0;
-  padding: 10% 0 0 10%;
+  width: 50%;
   box-sizing: border-box; }
 
 #map {
