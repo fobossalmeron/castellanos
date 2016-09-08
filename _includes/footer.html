@@ -20,7 +20,7 @@
         <ul class="contact-list">
           <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}"><b>{{ site.email }}</b></a></li>
-          <li>Teléfonos: {{site.tel1}} | {{site.tel2}}</li>
+          <li>Teléfonos: <a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a> | <a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a></li>
             <li><em><b>© Castellanos & asociados</b><br>Todos los derechos reservados, {{ site.time | date: '%Y' }}.</em></li>
         </ul>
     </div>

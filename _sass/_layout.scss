@@ -243,6 +243,10 @@ section{
       width: 100%;
       box-sizing: border-box;
       transition: 0.3s ease;
+
+      h2{
+        font-weight: bold;
+      }
 }
 
 .homesection{
@@ -285,13 +289,14 @@ section{
   position: fixed;
   transition: 0.5s ease;
   right: 3%;
-  bottom: 3%;
+  bottom: 5%;
   width: 125px;
   z-index: 2;
   height: 200px;
   img{
     width:65%;
     float:left;
+    margin-bottom:10px;
   }
   a{
     color: $brandgrey;
@@ -440,15 +445,16 @@ section{
   box-sizing: border-box;
   padding-top: 10%;
   &:nth-child(2n+2){
-    padding-left:5%;
+    padding-left:2.5%;
   }
   &:nth-child(2n+1){
-    padding-right:5%;
+    padding-right:2.5%;
   }
 }
 
 .rightcard{
-  padding-top:0;
+  width:50%;
+  padding-left: 2.5%;
 }
 
 .thirdcard{
@@ -498,7 +504,7 @@ form{
 
 input,textarea{
   border: 0;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $brandline;
   background-color: $white;
   width:100%;
   font-family: inherit;

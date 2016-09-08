@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 "Lora", serif;
   color: #424242;
-  background-color: #fdfdfd;
+  background-color: #FCFFFC;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -331,6 +331,8 @@ section {
   width: 100%;
   box-sizing: border-box;
   transition: 0.3s ease; }
+  section h2 {
+    font-weight: bold; }
 
 .homesection {
   margin-top: 0;
@@ -368,13 +370,14 @@ section {
   position: fixed;
   transition: 0.5s ease;
   right: 3%;
-  bottom: 3%;
+  bottom: 5%;
   width: 125px;
   z-index: 2;
   height: 200px; }
   #asidelogo img {
     width: 65%;
-    float: left; }
+    float: left;
+    margin-bottom: 10px; }
   #asidelogo a {
     color: #424242;
     float: left;
@@ -500,12 +503,13 @@ section {
   box-sizing: border-box;
   padding-top: 10%; }
   .halfcard:nth-child(2n+2) {
-    padding-left: 5%; }
+    padding-left: 2.5%; }
   .halfcard:nth-child(2n+1) {
-    padding-right: 5%; }
+    padding-right: 2.5%; }
 
 .rightcard {
-  padding-top: 0; }
+  width: 50%;
+  padding-left: 2.5%; }
 
 .thirdcard {
   width: 33%;
@@ -542,7 +546,7 @@ form {
 
 input, textarea {
   border: 0;
-  border-bottom: 1px solid #040F0F;
+  border-bottom: 1px solid #e9ece9;
   background-color: #FCFFFC;
   width: 100%;
   font-family: inherit;

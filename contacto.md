@@ -10,11 +10,11 @@ photo: contacto
 <p>Teléfonos: <a href="tel:{{ site.tel1}}"> {{site.tel1}}</a> | <a href="tel:{{ site.tel2}}">{{site.tel2}}</a></p>
 
 <form action="https://formspree.io/{{ site.email }}" method="POST">
-    <label for="name">Nombre</label>
+    <label for="name">Nombre:</label>
       <input type="text" name="name"><br>
-    <label for="name">Email</label>
+    <label for="name">Email:</label>
       <input type="email" name="_replyto"><br>
-    <label for="message">Mensaje</label>
+    <label for="message">Mensaje:</label>
       <textarea type="text" name="message"></textarea><br>
     <input class="submitbutton" type="submit" value="Enviar">
 </form>
