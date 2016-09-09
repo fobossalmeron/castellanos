@@ -40,6 +40,8 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.8.4/plugins/ScrollToPlugin.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 
 </head>
 
@@ -97,7 +99,7 @@
 
     <main  class="mainhome" >
         <div class="homephoto"></div>
-<section class="homesection">
+<section class="snap homesection">
   <div id="logocontainer">
     <img class="homelogo" src="/img/logo.svg">
     <img class="hometype" src="/img/type.svg">
@@ -109,11 +111,15 @@
 </section>
 
 <div id="asidelogo">
+  <div class="arrows">
+  <span id="up">▲</span><span id="down">▼</span>
+  </div>
   <img src="/img/logo.svg">
-  <a href="tel:(55) 55 24 24 14">(55) 55 24 24 14</a>  <a href="tel:(55) 55 34 71 77">(55) 55 34 71 77</a>
+  <a style="display:none;" href="tel:(55) 55 24 24 14">(55) 55 24 24 14</a>
+  <a style="display:none;"href="tel:(55) 55 34 71 77">(55) 55 34 71 77</a>
 </div>
 
-<section id="data1">
+<section class="snap" id="data1">
   <div class="introcard left thirdline">
     <h2><b>Nuestro objetivo</b></h2>
   </div>
@@ -124,7 +130,7 @@
   </div>
 </section>
 
-<section id="data2">
+<section class="snap" id="data2">
     <div class="introcard left">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -135,7 +141,7 @@
     </div>
 </section>
 
-<section id="data3">
+<section class="snap" id="data3">
     <div class="introcard left">
     <h2><b>Desde 1986</b></h2>
     </div>
@@ -144,7 +150,7 @@
     </div>
 </section>
 
-<section id="data4">
+<section class="snap" id="data4">
     <div class="introcard left">
       <p>Estar debidamente actualizados en todo momento para dar una atención personalizada a cada litigio, demostrando que la honestidad produce frutos más sólidos que otras conductas contrarias a ella.</p>
     </div>
@@ -157,15 +163,7 @@
 
     </main>
 
-    <footer id="footer"  class="footerhome" >
-
-  <!--script>
-  // build scenes
-  new ScrollMagic.Scene({triggerElement: "#footer"})
-          .setTween("#footer > div", {y: "200%", ease: Linear.easeNone})
-          .addIndicators()
-          .addTo(parallaxController);
-</script-->
+    <footer id="footer"  class="snap footerhome" >
 
 <div id="parallax2" class="footerParallaxParent">
   <div class="footerParallaxChild" >
@@ -201,6 +199,8 @@
   </div>
 
   <script src="/js/parallax.js"></script>
+  <script src="/js/vendor/jquery.scrollify.js"></script>
+  <script src="/js/snapscroll.js"></script>
 </footer>
 
 

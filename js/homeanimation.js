@@ -1,20 +1,20 @@
 
 var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: .13}});
 
-var logoScene = new ScrollMagic.Scene({triggerElement: "#logocontainer"})
+var logoScene = new ScrollMagic.Scene({triggerElement: "#logocontainer", offset:100})
         .setClassToggle("#logocontainer", "disapear")
         .addTo(controller);
-var logoScene = new ScrollMagic.Scene({triggerElement: "#logocontainer", offset: 100})
+var logoScene2 = new ScrollMagic.Scene({triggerElement: "#logocontainer"})
         .setClassToggle('#asidelogo', 'slidein')
         .addTo(controller);
 
-var DataScene1 = new ScrollMagic.Scene({triggerElement: "#data1", offset:-100})
+var DataScene1 = new ScrollMagic.Scene({triggerElement: "#data1"})
         .setClassToggle("#data1", "appear")
         .addTo(controller);
-var DataScene1h2 = new ScrollMagic.Scene({triggerElement: "#data1", offset:-100})
+var DataScene1h2 = new ScrollMagic.Scene({triggerElement: "#data1"})
         .setClassToggle('#data1 h2', 'slidein')
         .addTo(controller);
-var DataScene1p = new ScrollMagic.Scene({triggerElement: "#data1", offset:-100})
+var DataScene1p = new ScrollMagic.Scene({triggerElement: "#data1"})
         .setClassToggle('#data1 p', 'slidein')
         .addTo(controller);
 
@@ -46,4 +46,10 @@ var DataScene4h2 = new ScrollMagic.Scene({triggerElement: "#data4",})
         .addTo(controller);
 var DataScene4p = new ScrollMagic.Scene({triggerElement: "#data4",})
         .setClassToggle("#data4 p", "slidein")
+        .addTo(controller);
+var logoScene3 = new ScrollMagic.Scene({triggerElement: "#data4", duration:100})
+        .setClassToggle('#asidelogo', 'compensate')
+        .addTo(controller);
+var logoScene3 = new ScrollMagic.Scene({triggerElement: "#data4", offset:100})
+        .setClassToggle('#asidelogo', 'slidefooter')
         .addTo(controller);

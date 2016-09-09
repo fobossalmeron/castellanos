@@ -1,12 +1,4 @@
-<footer id="footer" {% if page.main == true %} class="footerhome" {% endif %}>
-
-  <!--script>
-  // build scenes
-  new ScrollMagic.Scene({triggerElement: "#footer"})
-          .setTween("#footer > div", {y: "200%", ease: Linear.easeNone})
-          .addIndicators()
-          .addTo(parallaxController);
-</script-->
+<footer id="footer" {% if page.main == true %} class="snap footerhome" {% endif %}>
 
 <div id="parallax2" class="footerParallaxParent">
   <div class="footerParallaxChild" {% if page.main != true %} style="background-image: url({{ site.baseurl}}img/fondoprincipal2.png);"{% endif%}>
@@ -42,4 +34,6 @@
   </div>
 
   <script src="{{site.baseurl}}js/parallax.js"></script>
+  <script src="{{site.baseurl}}js/vendor/jquery.scrollify.js"></script>
+  <script src="{{site.baseurl}}js/snapscroll.js"></script>
 </footer>

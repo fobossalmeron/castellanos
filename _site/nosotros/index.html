@@ -40,6 +40,8 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.8.4/plugins/ScrollToPlugin.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 
 </head>
 
@@ -100,13 +102,14 @@
   	<div class="parallaxChild" style="background-image: url(/img/nosotros.png);"></div>
   </div>
   <div class="pagewrapper">
-  <h1 class="pagetitle">Nosotros</h1>
+  <h1 style="" class="pagetitle">Nosotros</h1>
+  
+  <div class="rightcard">
+  <p>Somos una firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial Federal, así como del Tribunal Federal de Justicia Administrativa.</p>
+  </div>
+  
 
-    <section class="rightcard">
-<p>Somos una firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial Federal, así como del Tribunal Federal de Justicia Administrativa.</p>
-</section>
-
-<section class="halfcard">
+    <section class="halfcard">
 <h2>Las áreas contenciosa administrativa y constitucional</h2>
 <p>Comprenden litigios que van desde recursos administrativos hasta amparos contra leyes por actos emitidos por autoridades federales, estatales o municipales dentro de la República Mexicana, en contra de los particulares lesionándolos en sus derechos.
 </p>
@@ -132,14 +135,6 @@
     </main>
 
     <footer id="footer" >
-
-  <!--script>
-  // build scenes
-  new ScrollMagic.Scene({triggerElement: "#footer"})
-          .setTween("#footer > div", {y: "200%", ease: Linear.easeNone})
-          .addIndicators()
-          .addTo(parallaxController);
-</script-->
 
 <div id="parallax2" class="footerParallaxParent">
   <div class="footerParallaxChild"  style="background-image: url(/img/fondoprincipal2.png);">
@@ -175,6 +170,8 @@
   </div>
 
   <script src="/js/parallax.js"></script>
+  <script src="/js/vendor/jquery.scrollify.js"></script>
+  <script src="/js/snapscroll.js"></script>
 </footer>
 
 

@@ -3,11 +3,8 @@ layout: page
 title: Nosotros
 permalink: /nosotros/
 photo: nosotros
+rightcard: Somos una firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial Federal, así como del Tribunal Federal de Justicia Administrativa.
 ---
-
-<section class="rightcard">
-<p>Somos una firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial Federal, así como del Tribunal Federal de Justicia Administrativa.</p>
-</section>
 
 <section class="halfcard">
 <h2>Las áreas contenciosa administrativa y constitucional</h2>

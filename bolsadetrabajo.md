@@ -3,6 +3,7 @@ layout: page
 title: Bolsa de trabajo
 permalink: /bolsadetrabajo/
 photo: bolsadetrabajo
+longtitle: true
 ---
 <section class="cards">
 <div class="halfcard">

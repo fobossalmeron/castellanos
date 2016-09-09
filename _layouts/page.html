@@ -5,7 +5,12 @@ layout: default
   	<div class="parallaxChild" style="background-image: url({{ site.baseurl}}img/{{page.photo}}.png);"></div>
   </div>
   <div class="pagewrapper">
-  <h1 class="pagetitle">{{ page.title }}</h1>
+  <h1 style="{% if page.longtitle %} width:100%;{% endif %}" class="pagetitle">{{ page.title }}</h1>
+  {% if page.rightcard %}
+  <div class="rightcard">
+  <p>{{page.rightcard}}</p>
+  </div>
+  {% endif %}
 
     {{ content }}
   </div>

@@ -249,7 +249,6 @@ footer {
 
 .footerhome {
   margin-top: 20%;
-  z-index: 3;
   position: relative; }
 
 .footerlogo {
@@ -335,8 +334,7 @@ section {
     font-weight: bold; }
 
 .homesection {
-  margin-top: 0;
-  padding-top: 0 !important;
+  padding-top: 82px !important;
   opacity: 1 !important; }
 
 .homephoto {
@@ -369,19 +367,42 @@ section {
 #asidelogo {
   position: fixed;
   transition: 0.5s ease;
-  right: 3%;
-  bottom: 5%;
+  right: 4%;
+  bottom: 15px;
   width: 125px;
-  z-index: 2;
-  height: 200px; }
+  z-index: 3; }
   #asidelogo img {
-    width: 65%;
-    float: left;
-    margin-bottom: 10px; }
+    width: 50%;
+    float: left; }
   #asidelogo a {
     color: #424242;
     float: left;
     clear: both; }
+  #asidelogo .arrows {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 50%; }
+  #asidelogo span {
+    border-radius: 50%;
+    border: 1px solid #424242;
+    width: 45px;
+    height: 45px;
+    line-height: 2;
+    text-align: center;
+    color: #424242;
+    margin: 3px;
+    font-size: 22px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    clear: both;
+    transition: .3s ease; }
+    #asidelogo span:nth-child(2) {
+      line-height: 2.45; }
+    #asidelogo span:hover {
+      color: #FCFFFC;
+      background-color: #424242; }
 
 .appear {
   opacity: 1 !important; }
@@ -509,7 +530,9 @@ section {
 
 .rightcard {
   width: 50%;
-  padding-left: 2.5%; }
+  padding-left: 2.5%;
+  float: left;
+  box-sizing: border-box; }
 
 .thirdcard {
   width: 33%;
@@ -616,7 +639,11 @@ textarea {
     transition: 0.5s ease; }
 
 #asidelogo {
-  transform: translateY(150%); }
+  transform: translatex(60px); }
+  #asidelogo img {
+    opacity: 0; }
+  #asidelogo #up {
+    opacity: 0; }
 
 #data1 h2 {
   transform: translateY(-150%); }
@@ -640,6 +667,22 @@ textarea {
 
 .slidein {
   transform: translateX(0) translateY(0) !important; }
+  .slidein img {
+    opacity: 1 !important; }
+  .slidein #up {
+    opacity: 1 !important; }
+
+.slidefooter {
+  bottom: 140px !important; }
+  .slidefooter img {
+    opacity: 0 !important; }
+  .slidefooter #down {
+    opacity: 0 !important; }
+  .slidefooter #up {
+    opacity: 1 !important; }
+
+.compensate {
+  bottom: 60px !important; }
 
 .parallaxParent {
   width: 100%;

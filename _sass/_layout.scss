@@ -139,7 +139,6 @@ footer {
 
 .footerhome{
     margin-top:20%;
-    z-index: 3;
     position:relative;
 }
 
@@ -250,8 +249,7 @@ section{
 }
 
 .homesection{
-  margin-top:0;
-  padding-top:0 !important;
+  padding-top:82px !important;
   opacity: 1 !important;
 }
 
@@ -288,20 +286,47 @@ section{
 #asidelogo{
   position: fixed;
   transition: 0.5s ease;
-  right: 3%;
-  bottom: 5%;
+  right: 4%;
+  bottom: 15px;
   width: 125px;
-  z-index: 2;
-  height: 200px;
+  z-index: 3;
   img{
-    width:65%;
+    width: 50%;
     float:left;
-    margin-bottom:10px;
   }
   a{
     color: $brandgrey;
     float:left;
     clear:both;
+  }
+  .arrows{
+    float:left;
+    position:relative;
+    box-sizing: border-box;
+    max-width: 50%;
+  }
+  span{
+    border-radius:50%;
+    border: 1px solid $brandgrey;
+    width: 45px;
+    height: 45px;
+    line-height:2;
+    text-align: center;
+    color:$brandgrey;
+    margin:3px;
+    font-size: 22px;
+    float:left;
+    position:relative;
+    cursor:pointer;
+    clear: both;
+    transition: .3s ease;
+    &:nth-child(2){
+      line-height: 2.45;
+    }
+    &:hover{
+      color:$white;
+      background-color: $brandgrey;
+    }
   }
 }
 .appear{
@@ -455,6 +480,8 @@ section{
 .rightcard{
   width:50%;
   padding-left: 2.5%;
+  float:left;
+  box-sizing: border-box;
 }
 
 .thirdcard{
@@ -596,7 +623,13 @@ textarea{
 // Animations
 
 #asidelogo{
-  transform: translateY(150%);
+  transform: translatex(60px);
+  img{
+    opacity:0;
+  }
+  #up{
+    opacity:0;
+  }
 }
 
 #data1{
@@ -637,8 +670,30 @@ textarea{
 
 .slidein{
   transform: translateX(0) translateY(0) !important;
+  img{
+    opacity:1 !important;
+  }
+  #up{
+    opacity:1 !important;
+  }
 }
 
+.slidefooter{
+  bottom: 140px !important;
+  img{
+    opacity:0 !important;
+  }
+  #down{
+    opacity:0 !important
+  }
+  #up{
+    opacity:1 !important;
+  }
+}
+
+.compensate{
+  bottom:60px !important;
+}
 //Parallax
 
 

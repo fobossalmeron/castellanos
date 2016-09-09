@@ -3,6 +3,7 @@ layout: page
 title: Áreas de práctica
 permalink: /areasdepractica/
 photo: areas
+longtitle: true
 ---
 
 <section class="cards">
