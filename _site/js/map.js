@@ -10,7 +10,7 @@ function initMap() {
   var mapCastellanos = new google.maps.Map(document.getElementById("map"), locCastellanosOptions);
   var iconCastellanos = {
        url: '/img/marker3.svg',
-       size: new google.maps.Size(50,110),
+       size: new google.maps.Size(52,110),
        origin: new google.maps.Point(0,0),
        anchor: new google.maps.Point(10,90)
  };
@@ -23,12 +23,12 @@ function initMap() {
     icon: iconCastellanos
   });
 
-//  function toggleBounce() {
-//    if (locCastellanosMarker.getAnimation() !== null) {
-//      locCastellanosMarker.setAnimation(null);
-//    } else {
-//      locCastellanosMarker.setAnimation(google.maps.Animation.BOUNCE);
-//    }
-//  }
-//  locCastellanosMarker.addListener('click', toggleBounce);
+  function toggleBounce() {
+    if (locCastellanosMarker.getAnimation() !== null) {
+      locCastellanosMarker.setAnimation(null);
+    } else {
+      locCastellanosMarker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
+  locCastellanosMarker.addListener('click', toggleBounce);
 };

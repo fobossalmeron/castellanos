@@ -2,7 +2,7 @@
 layout: page
 title: Bolsa de trabajo
 permalink: /bolsadetrabajo/
-photo: bolsadetrabajo
+photo: dist/bolsadetrabajo.jpg
 longtitle: true
 ---
 <section class="cards">

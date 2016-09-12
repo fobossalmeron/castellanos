@@ -261,7 +261,7 @@ section{
 }
 
 .homephoto{
-  background-image:url("/img/fondoprincipal2.png");
+  background-image:url("/img/dist/fondoprincipal.jpg");
   background-position: top left;
   background-size: cover;
   padding: 30%;
@@ -294,7 +294,7 @@ section{
   position: fixed;
   transition: 0.5s ease;
   right: 4%;
-  bottom: 15px;
+  top: 50%;
   width: 125px;
   z-index: 3;
   img{
@@ -422,7 +422,7 @@ section{
     line-height: 1.2;
   }
   p{
-    float: left;
+    float: right;
     font-size: 17px;
     width: 75%;
     max-width:300px;
@@ -558,7 +558,7 @@ textarea{
 .submitbutton{
   font-family: inherit;
   font-size: inherit;
-  background-color: $brandgrey;
+  background-color: $brandgreydark;
   color: $white;
   padding: 10px;
 }
@@ -704,11 +704,8 @@ textarea{
   }
 }
 
-.compensate{
-  bottom:60px !important;
-}
-//Parallax
 
+//Parallax
 
 .parallaxParent {
   width: 100%;
@@ -723,20 +720,4 @@ textarea{
   width: 100%;
   top: -115%;
   background-size:cover;
-}
-
-.footerParallaxChild{
-  height: 650px;
-  position: relative;
-  width: 100%;
-  top: -100%;
-  background-size: cover;
-}
-
-.footerParallaxParent{
-  width: 100%;
-height: 500px;
-float: left;
-overflow: hidden;
-position: relative;
 }

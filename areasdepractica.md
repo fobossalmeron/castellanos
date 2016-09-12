@@ -2,7 +2,7 @@
 layout: page
 title: Áreas de práctica
 permalink: /areasdepractica/
-photo: areas
+photo: dist/areas.jpg
 longtitle: true
 ---
 

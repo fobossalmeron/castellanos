@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 15px/1.5 "Lora", serif;
-  color: #1c1c1c;
+  color: #424242;
   background-color: #FCFFFC;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -81,7 +81,7 @@ a {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid #444444;
+  border: 1px solid #494949;
   border-radius: 3px;
   background-color: #eef; }
 
@@ -176,7 +176,7 @@ header {
       top: 9px;
       right: 15px;
       background-color: #fdfdfd;
-      border: 1px solid #444444;
+      border: 1px solid #494949;
       border-radius: 5px;
       text-align: right; }
       .site-nav .menu-icon {
@@ -243,7 +243,7 @@ footer {
 .contact-list {
   list-style: none;
   margin-left: 0;
-  color: #444444; }
+  color: #494949; }
   .contact-list li {
     padding-bottom: 1.5%; }
 
@@ -312,7 +312,7 @@ section {
   opacity: 1 !important; }
 
 .homephoto {
-  background-image: url("/img/fondoprincipal2.png");
+  background-image: url("/img/dist/fondoprincipal.jpg");
   background-position: top left;
   background-size: cover;
   padding: 30%;
@@ -342,7 +342,7 @@ section {
   position: fixed;
   transition: 0.5s ease;
   right: 4%;
-  bottom: 15px;
+  top: 50%;
   width: 125px;
   z-index: 3; }
   #asidelogo img {
@@ -451,7 +451,7 @@ section {
     float: right;
     line-height: 1.2; }
   .left p {
-    float: left;
+    float: right;
     font-size: 17px;
     width: 75%;
     max-width: 300px;
@@ -561,7 +561,7 @@ textarea {
 .submitbutton {
   font-family: inherit;
   font-size: inherit;
-  background-color: #424242;
+  background-color: #1c1c1c;
   color: #FCFFFC;
   padding: 10px; }
 
@@ -661,9 +661,6 @@ textarea {
   .slidefooter #up {
     opacity: 1 !important; }
 
-.compensate {
-  bottom: 60px !important; }
-
 .parallaxParent {
   width: 100%;
   height: 240px;
@@ -677,20 +674,6 @@ textarea {
   width: 100%;
   top: -115%;
   background-size: cover; }
-
-.footerParallaxChild {
-  height: 650px;
-  position: relative;
-  width: 100%;
-  top: -100%;
-  background-size: cover; }
-
-.footerParallaxParent {
-  width: 100%;
-  height: 500px;
-  float: left;
-  overflow: hidden;
-  position: relative; }
 
 /**
  * Syntax highlighting styles

@@ -2,12 +2,15 @@
 layout: page
 title: Contacto
 permalink: contacto/
-photo: contacto
+photo: dist/contacto.jpg
 ---
 
 <section class="cards">
   <div class="halfcard">
-    <p>Teléfonos: <a href="tel:{{ site.tel1}}"> {{site.tel1}}</a> | <a href="tel:{{ site.tel2}}">{{site.tel2}}</a></p>
+    <p>contacto@castellanosasociados.com<br>
+      <a href="tel:{{ site.tel1}}"> {{site.tel1}}</a> | <a href="tel:{{ site.tel2}}">{{site.tel2}}</a><br>
+      San Francisco 1626-804. Del Valle, Ciudad de México.
+    </p>
     <form action="https://formspree.io/{{ site.email }}" method="POST">
         <label for="name">Nombre:</label>
           <input type="text" name="name"><br>
@@ -21,7 +24,6 @@ photo: contacto
 
   <div class="halfcard">
     <div id="map"></div>
-    <p>San Francisco 1626, Int. 804. Col. del Valle, Del. Benito Juárez.</p>
   </div>
 </section>
 
