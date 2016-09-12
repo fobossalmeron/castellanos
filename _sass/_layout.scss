@@ -416,14 +416,16 @@ section{
   h2{
     font-size: 70px;
     width: 75%;
+    max-width:300px;
     text-align: right;
-    float: left;
+    float: right;
     line-height: 1.2;
   }
   p{
     float: left;
     font-size: 17px;
     width: 75%;
+    max-width:300px;
     text-align: right;
     padding-top: 5%;
   }
@@ -450,6 +452,7 @@ section{
     h2{
       font-size: 70px;
       width: 75%;
+      max-width:300px;
       text-align: left;
       float: left;
       line-height: 1.2;
@@ -458,6 +461,7 @@ section{
       float: left;
       font-size: 17px;
       width: 75%;
+      max-width:300px;
       text-align: left;
       padding-top: 5%;
     }
