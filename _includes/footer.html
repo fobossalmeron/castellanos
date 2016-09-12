@@ -1,40 +1,29 @@
 <footer id="footer" {% if page.main == true %} class="snap footerhome" {% endif %}>
 
-<div id="parallax2" class="footerParallaxParent">
-  <div class="footerParallaxChild" {% if page.main != true %} style="background-image: url({{ site.baseurl}}img/fondoprincipal2.png);"{% endif%}>
-  </div>
-</div>
-
-  <div class="wrapper">
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}"><b>{{ site.email }}</b></a></li>
-          <li>Teléfonos: <a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a> | <a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a></li>
-            <li><em><b>© Castellanos & asociados</b><br>Todos los derechos reservados, {{ site.time | date: '%Y' }}.</em></li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><em><b>© {{ site.time | date: '%Y' }} Castellanos & Asociados</b>. Todos los derechos reservados.</em></li>
+          <li>Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</a></li>
         </ul>
-    </div>
+      </div>
 
       <div class="footer-col footer-col-2">
-        <img class="footerlogo" src="{{ site.baseurl }}img/logo.svg">
+        <a href="{{site.baseurl}}">{% include logowhite.html %}</a>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Somos una firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo
-          y constitucional conformada por diversos profesionales, entre ellos exfuncionarios del Poder Judicial
-          Federal, así como del Tribunal Federal de Justicia Administrativa.
-          <br><br>
-          Sitio diseñado y desarrollado por <a href="http://rodrigosalmeron.mx" target="_blank"><b>Rodrigo Salmerón</b>.</a>
-        </p>
-        </p>
+        <ul class="contact-list">
+          <li>San Francisco 1626-804. Del Valle, Ciudad de México.</li>
+          <li><a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a></li>
+          <li><a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a></li>
+        </ul>
       </div>
     </div>
-
-  </div>
 
   <script src="{{site.baseurl}}js/parallax.js"></script>
   <script src="{{site.baseurl}}js/vendor/jquery.scrollify.js"></script>
   <script src="{{site.baseurl}}js/snapscroll.js"></script>
+
 </footer>

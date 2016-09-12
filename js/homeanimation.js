@@ -47,7 +47,7 @@ var DataScene4h2 = new ScrollMagic.Scene({triggerElement: "#data4",})
 var DataScene4p = new ScrollMagic.Scene({triggerElement: "#data4",})
         .setClassToggle("#data4 p", "slidein")
         .addTo(controller);
-var logoScene3 = new ScrollMagic.Scene({triggerElement: "#data4", duration:100})
+var logoScene3 = new ScrollMagic.Scene({triggerElement: "#data4"})
         .setClassToggle('#asidelogo', 'compensate')
         .addTo(controller);
 var logoScene3 = new ScrollMagic.Scene({triggerElement: "#data4", offset:100})
