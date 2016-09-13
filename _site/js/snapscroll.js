@@ -23,8 +23,4 @@ $(function() {
     $.scrollify.previous();
   });
 
-//  setTimeout(function(){
-//  $.scrollify.next();
-//  }, 2500);
-
 });

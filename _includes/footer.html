@@ -22,8 +22,13 @@
       </div>
     </div>
 
-  <script src="{{site.baseurl}}js/parallax.js"></script>
-  <script src="{{site.baseurl}}js/vendor/jquery.scrollify.js"></script>
-  <script src="{{site.baseurl}}js/snapscroll.js"></script>
+    {% if page.main == true %}
+    <script src="{{site.baseurl}}js/vendor/jquery.scrollify.js"></script>
+    <script src="{{site.baseurl}}js/snapscroll.js"></script>
+    {% else %}
+    <script src="{{site.baseurl}}js/parallax.js"></script>
+    {% endif %}
+
+    <script src="{{site.baseurl}}js/main.js"></script>
 
 </footer>
