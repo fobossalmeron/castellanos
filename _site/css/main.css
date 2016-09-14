@@ -174,12 +174,10 @@ header {
  */
 footer {
   float: left;
-  padding: 5%;
   width: 100%;
+  padding-top: 10%;
   box-sizing: border-box;
-  position: relative;
-  background-color: #1c1c1c;
-  box-shadow: 0px 8px 15px #424242; }
+  position: relative; }
   footer a {
     color: #D3D3D3; }
     footer a:visited {
@@ -189,7 +187,7 @@ footer {
       text-decoration: none; }
 
 .footerhome {
-  margin: 20% 0 0 0; }
+  padding-top: 0; }
 
 .footerlogo {
   height: 100px;
@@ -212,7 +210,10 @@ footer {
     padding-bottom: 1.5%; }
 
 .footer-col-wrapper {
-  font-size: 13px; }
+  font-size: 13px;
+  padding: 5%;
+  background-color: #1c1c1c;
+  box-shadow: 0px 8px 15px #424242; }
 
 .footer-col {
   float: left;
@@ -236,7 +237,8 @@ main {
   margin-top: 50px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 3%; }
+  padding: 0 3%;
+  overflow: hidden; }
 
 .pagewrapper {
   padding: 10%;
@@ -266,6 +268,7 @@ section {
   background-position: top left;
   background-size: cover;
   padding: 30%;
+  min-height: 100%;
   position: fixed;
   z-index: -1;
   width: 94%;
@@ -367,7 +370,7 @@ section {
   .tels a {
     color: #424242;
     float: left; }
-    .tels a:before {
+    .tels a::before {
       height: 30px;
       background-color: #040F0F;
       opacity: 0.1;
@@ -377,7 +380,7 @@ section {
       clear: none;
       display: block;
       margin: -4px 10px; }
-    .tels a:nth-last-child(1):before {
+    .tels a:nth-last-child(1)::before {
       content: none; }
     .tels a:hover {
       color: #424242; }
@@ -386,24 +389,28 @@ section {
   width: 45%;
   float: left;
   box-sizing: border-box; }
+  .introcard h2 {
+    font-size: 70px;
+    width: 80%;
+    max-width: 300px;
+    line-height: 1.2;
+    box-sizing: border-box; }
+  .introcard p {
+    font-size: 17px;
+    width: 80%;
+    max-width: 300px;
+    padding-top: 5%;
+    box-sizing: border-box; }
 
 .left {
   padding-left: 10%; }
   .left h2 {
-    font-size: 70px;
-    width: 75%;
-    max-width: 300px;
     text-align: right;
-    float: right;
-    line-height: 1.2; }
+    float: right; }
   .left p {
     float: right;
-    font-size: 17px;
-    width: 75%;
-    max-width: 300px;
-    text-align: right;
-    padding-top: 5%; }
-  .left:before {
+    text-align: right; }
+  .left::before {
     height: 200px;
     background-color: #040F0F;
     width: 1px;
@@ -412,35 +419,21 @@ section {
     float: right;
     clear: none;
     display: block;
-    margin: 0% 12%; }
+    margin: 0% 9.5%; }
 
-.thirdline:before {
+.thirdline::before {
   height: 250px; }
 
 .right {
   padding-right: 10%;
   margin-right: 10%; }
   .right h2 {
-    font-size: 70px;
-    width: 75%;
-    max-width: 300px;
     text-align: left;
     float: left;
-    line-height: 1.2; }
+    width: 100%; }
   .right p {
     float: left;
-    font-size: 17px;
-    width: 75%;
-    max-width: 300px;
-    text-align: left;
-    padding-top: 5%; }
-
-.dato {
-  font-size: 70px;
-  width: 75%;
-  text-align: left;
-  float: left;
-  line-height: 1.2; }
+    text-align: left; }
 
 .halfcard {
   width: 50%;
@@ -639,7 +632,15 @@ textarea {
 @media screen and (max-width: 1000px) {
   #headerlogo {
     height: 35px;
-    margin-top: 11px; } }
+    margin-top: 11px; }
+
+  .introcard h2 {
+    font-size: 50px; }
+  .introcard p {
+    font-size: 15px; }
+
+  .thirdline::before {
+    height: 200px; } }
 @media screen and (max-width: 900px) {
   header {
     height: 60px;
@@ -659,10 +660,7 @@ textarea {
     padding-left: 0 !important; }
 
   .pagewrapper {
-    padding: 10% 5% 5% 5%; }
-
-  footer {
-    margin-top: 10%; } }
+    padding: 10% 5% 5% 5%; } }
 @media screen and (max-width: 800px) {
   .rightcard {
     width: 100%;
@@ -684,7 +682,44 @@ textarea {
     text-align: center; }
 
   .footer-col-2 {
-    width: 100%; } }
+    width: 100%; }
+
+  .mainhome section {
+    padding-top: 75px; }
+
+  .introcard {
+    width: 100%; }
+    .introcard h2 {
+      width: 100%;
+      text-align: center; }
+    .introcard p {
+      width: 100%;
+      text-align: center;
+      max-width: 100%; }
+
+  .left {
+    padding: 0 10%; }
+    .left::before {
+      display: none; }
+
+  .right {
+    padding: 0 10%; }
+
+  #asidelogo {
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    top: auto;
+    transform: translatex(0) !important; }
+    #asidelogo img {
+      display: none; }
+    #asidelogo span {
+      background-color: #1c1c1c;
+      color: #FCFFFC; }
+
+  .slidefooter {
+    transform: translatex(0) !important;
+    bottom: 80px !important; } }
 @media screen and (max-width: 600px) {
   .thirdcard {
     width: 100%;

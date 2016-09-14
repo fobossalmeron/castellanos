@@ -1,18 +1,20 @@
 $(function() {
   $.scrollify({
     section : ".snap",
-    sectionName : "section-name",
+    sectionName : "false",
     interstitialSection : ".snaplittle",
     easing: "easeOutExpo",
     scrollSpeed: 1300,
     offset : 0,
     scrollbars: false,
     standardScrollElements: "",
-    setHeights: false,
+    setHeights: true,
     overflowScroll: true,
     before:function() {},
     after:function() {},
-    afterResize:function() {},
+    afterResize:function() {
+      $.scrollify.update();
+    },
     afterRender:function() {}
   });
 
