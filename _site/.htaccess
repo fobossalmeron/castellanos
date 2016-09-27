@@ -1,8 +1,7 @@
-#RewriteCond %{HTTP_HOST} !^castellanosasociados.com$ [NC]
-#RewriteCond %{HTTP_HOST} !^castellanosasociados.com$ [NC]
-#RewriteCond %{HTTP_HOST} !^castellanosasociados.com$ [NC]
-#RewriteRule ^(.*)$ http://castellanosasociados.com/$1 [L,R=301]
-#RedirectMatch 301 ^/_site/(.*)$ http://castellanosasociados.com/
+RewriteCond %{HTTP_HOST} !^castellanosasociados.com$ [NC]
+RewriteCond %{HTTP_HOST} !^mail.castellanosasociados.com$ [NC]
+RewriteRule ^(.*)$ http://castellanosasociados.com/$1 [L,R=301]
+RedirectMatch 301 ^/_site/(.*)$ http://castellanosasociados.com/
 
 AddDefaultCharset UTF-8
 

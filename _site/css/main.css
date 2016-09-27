@@ -115,6 +115,15 @@ pre {
   .icon > svg path {
     fill: #424242; }
 
+.sitioenconstruccion {
+  float: left;
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
 /**
  * Site header
  */
@@ -371,7 +380,7 @@ section {
     color: #424242;
     float: left; }
     .tels a::before {
-      height: 30px;
+      height: 20px;
       background-color: #040F0F;
       opacity: 0.1;
       width: 1px;
@@ -379,7 +388,7 @@ section {
       float: right;
       clear: none;
       display: block;
-      margin: -4px 10px; }
+      margin: 2px 10px; }
     .tels a:nth-last-child(1)::before {
       content: none; }
     .tels a:hover {

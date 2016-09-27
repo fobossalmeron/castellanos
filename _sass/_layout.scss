@@ -1,3 +1,13 @@
+.sitioenconstruccion{
+  float:left;
+  clear:both;
+  text-align: center;
+  padding:10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /**
  * Site header
  */
@@ -308,7 +318,7 @@ section{
     color:$brandgrey;
     float:left;
     &::before{
-        height: 30px;
+        height: 20px;
         background-color: $black;
         opacity: 0.1;
         width: 1px;
@@ -316,7 +326,7 @@ section{
         float: right;
         clear: none;
         display: block;
-        margin: -4px 10px;
+        margin: 2px 10px;
     }
     &:nth-last-child(1)::before{
       content:none;
