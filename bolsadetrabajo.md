@@ -12,7 +12,7 @@ longtitle: true
 <ul>
 <li>Titulados con un promedio igual o superior a 9.</li>
 <li>Buena presentación, honestos, con metas claras de desarrollo, dispuestos a viajar.</li>
-<li>Experiencia mínima de tres años en las materias contencioso-administrativa y constitucional.</li>
+<li>Experiencia mínima de tres años en las materias contencioso - administrativa y constitucional.</li>
 <li>Dominio del idioma inglés.</li>
 <li>Cartas de recomendación de trabajos anteriores.</li>
 </ul>

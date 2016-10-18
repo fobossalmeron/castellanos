@@ -9,8 +9,8 @@ longtitle: true
 <section class="cards">
 <div class="halfcard">
 
-<h2> Derecho Contencioso Administrativo</h2>
-<p>Abarcando desde la interpretación de recursos administrativos hasta la promoción de juicios de amparo. Las áreas atendidas son todas aquellas dentro del derecho contencioso administrativo en las que por un lado se encuentra una persona física o moral y por el otro una autoridad federal, estatal o municipal emisora de actos lescivos para los particulars.</p>
+<h2> Derecho Contencioso - Administrativo</h2>
+<p>Abarcando desde la interpretación de recursos administrativos hasta la promoción de juicios de amparo. Las áreas atendidas son todas aquellas dentro del derecho contencioso - administrativo en las que por un lado se encuentra una persona física o moral y por el otro una autoridad federal, estatal o municipal emisora de actos lescivos para los particulares.</p>
 
 </div>
 

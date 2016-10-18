@@ -291,13 +291,14 @@ section {
   padding: 10%; }
 
 #logocontainer {
-  width: 25%;
+  width: 80%;
   min-width: 250px;
+  max-width: 550px;
   float: left;
   position: relative;
   left: 50%;
   transform: translateX(-50%) translateZ(0);
-  margin-top: 5%;
+  margin-top: 15%;
   transition: 0.5s ease;
   z-index: 2; }
 
@@ -306,7 +307,7 @@ section {
   transition: 0.5s ease;
   right: 4%;
   top: 50%;
-  width: 125px;
+  width: 53px;
   z-index: 3; }
   #asidelogo img {
     width: 50%;
@@ -361,8 +362,8 @@ section {
 
 .hometitle {
   position: absolute;
-  top: -100%;
-  left: -100%; }
+  top: -99999px;
+  left: -99999px; }
 
 .tels {
   font-size: 16px;
@@ -548,12 +549,8 @@ textarea {
   .mainhome section p, .mainhome section h2 {
     transition: 0.5s ease; }
 
-#asidelogo {
-  transform: translatex(60px); }
-  #asidelogo img {
-    opacity: 0; }
-  #asidelogo #up {
-    opacity: 0; }
+#asidelogo #up {
+  opacity: 0; }
 
 #data1 h2 {
   transform: translateY(-150%); }
@@ -577,16 +574,11 @@ textarea {
 
 .slidein {
   transform: translateX(0) translateY(0) !important; }
-  .slidein img {
-    opacity: 1 !important; }
   .slidein #up {
     opacity: 1 !important; }
 
 .slidefooter {
-  transform: translatex(60px) !important;
   bottom: 175px !important; }
-  .slidefooter img {
-    opacity: 0 !important; }
   .slidefooter #down {
     opacity: 0 !important; }
   .slidefooter #up {
@@ -666,11 +658,17 @@ textarea {
 
   .halfcard {
     width: 100%;
-    padding-left: 0 !important; }
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
 
   .pagewrapper {
     padding: 10% 5% 5% 5%; } }
 @media screen and (max-width: 800px) {
+  #map {
+    width: 80%;
+    margin: 0 auto;
+    height: 270px; }
+
   .rightcard {
     width: 100%;
     padding: 0; }

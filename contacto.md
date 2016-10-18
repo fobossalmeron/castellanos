@@ -9,7 +9,7 @@ photo: dist/contacto.jpg
   <div class="halfcard">
     <p>contacto@castellanosasociados.com<br>
       <a href="tel:{{ site.tel1}}"> {{site.tel1}}</a> | <a href="tel:{{ site.tel2}}">{{site.tel2}}</a><br>
-      San Francisco 1626-804. Del Valle, Ciudad de México.
+      San Francisco 1626-804. Del Valle, 03100 Ciudad de México.
     </p>
     <form action="https://formspree.io/{{ site.email }}" method="POST">
         <label for="name">Nombre:</label>

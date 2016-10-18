@@ -5,28 +5,28 @@ permalink: /abogados/
 photo: dist/abogados.jpg
 abogados:
   - nombre: Gustavo Castellanos Díaz del Rivero
-    descripcion: Exfuncionario del Poder Judicial Federal, siempre adscrito a juzgados de distrito en materia administrativa, con experiencia de treinta años en litigios contenciosos administrativos y constitucionales.
+    descripcion: Exfuncionario del Poder Judicial Federal, siempre adscrito a juzgados de distrito en materia administrativa, con experiencia de treinta años en litigios contencioso - administrativos y constitucionales.
     correo: gustavo.castellanos
-  - nombre: Hugo Ramírez Rojas
+  - nombre: Hugo F. Ramírez Rojas
     descripcion: Litigante en materia contenciosa administrativa y constitucional con experiencia de veinte años.
     correo: hugo.ramirez
   - nombre: Elia Cid Sebastián
     descripcion: Exfuncionaria del Poder Judicial de la Federación, adscrita a juzgados de distrito y Tribunales Colegiados de Circuito, todos en materia administrativa y constitucional, con experiencia en litigios de estas materias por doce años.
     correo: elia.sebastian
   - nombre: Luis Fernando Lazcano y Ramírez
-    descripcion: Exfuncionario del ahora Tribunal Federal de Justicia Administrativa, experiencia en litigios contencioso administrativos y constitucionales por veintidos años.
+    descripcion: Exfuncionario del ahora Tribunal Federal de Justicia Administrativa, experiencia en litigios contencioso - administrativos y constitucionales por veintidos años.
     correo: fernando.lazcano
   - nombre: José Luis Pérez Martínez
-    descripcion: Abogado con experiencia en litigios contencioso administrativo y constitucionales por veinte años
+    descripcion: Abogado con experiencia en litigios contencioso - administrativo y constitucionales por veinte años
     correo: joseluis.perez
   - nombre: Ana Areli Chávez Rodríguez
-    descripcion: Abogada con experiencia en litigios contencioso administrativo y constitucionales por diez años.
+    descripcion: Abogada con experiencia en litigios contencioso - administrativo y constitucionales por diez años.
     correo: areli.chavez
   - nombre: Gustavo Flores Trujillo
-    descripcion: Abogado con experiencia en litigios contencioso administrativo y constitucionales por ocho años.
+    descripcion: Abogado con experiencia en litigios contencioso - administrativo y constitucionales por ocho años.
     correo: gustavo.flores
   - nombre: Penélope Yadira Hernández Canario
-    descripcion: Abogada con experiencia en litigios contencioso administrativo y constitucionales por seis años.
+    descripcion: Abogada con experiencia en litigios contencioso - administrativo y constitucionales por seis años.
     correo: penelope.hernandez
 ---
 <span class="spanspacer"></span>

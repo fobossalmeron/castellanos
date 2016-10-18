@@ -7,9 +7,8 @@ main: true
 <div class="homephoto"></div>
 <section class="snap homesection">
   <div id="logocontainer">
-    <img class="homelogo" src="{{ site.baseurl }}img/logo.svg">
     <img class="hometype" src="{{ site.baseurl }}img/type.svg">
-    <h1 class="hometitle"><b>Castellanos & asociados</b></h1>
+    <h1 class="hometitle">Castellanos & asociados</h1>
     <div class="tels">
       <a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a>  <a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a>
     </div>
@@ -20,7 +19,6 @@ main: true
   <div class="arrows">
   <span id="up">▲</span><span id="down">▼</span>
   </div>
-  <img src="{{ site.baseurl }}img/logo.svg">
 </div>
 
 <section class="snap" id="data1">
