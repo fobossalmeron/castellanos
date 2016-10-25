@@ -356,6 +356,15 @@ section{
     padding-top: 5%;
     box-sizing: border-box;
   }
+  ul{
+    font-size: 17px;
+    width: 80%;
+    max-width:300px;
+    padding-top: 5%;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+  }
 }
 
 .left{
@@ -367,6 +376,10 @@ section{
   p{
     float: right;
     text-align: right;
+  }
+  ul{
+    float:right;
+    text-align:right;
   }
   &::before{
     height: 200px;

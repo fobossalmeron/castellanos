@@ -411,6 +411,14 @@ section {
     max-width: 300px;
     padding-top: 5%;
     box-sizing: border-box; }
+  .introcard ul {
+    font-size: 17px;
+    width: 80%;
+    max-width: 300px;
+    padding-top: 5%;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none; }
 
 .left {
   padding-left: 10%; }
@@ -418,6 +426,9 @@ section {
     text-align: right;
     float: right; }
   .left p {
+    float: right;
+    text-align: right; }
+  .left ul {
     float: right;
     text-align: right; }
   .left::before {

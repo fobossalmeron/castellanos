@@ -34,9 +34,10 @@ main: true
 
 <section class="snap" id="data2">
     <div class="introcard left">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
+      <p>Derivado al estudio, preparación, análisis y desarrollo integral de nuestros profesionales del derecho,
+        contamos con un alto porcentaje de éxito en los litigios administrativos, fiscales y constitucionales que
+        plateamos, cuestión que ha colmado las expectativas de nuestros clientes y se traduce en la prestación de
+        servicios jurídicos de calidad, puntualidad, asertividad y confianza por el seguimiento puntual de los asuntos.</p>
     </div>
     <div class="introcard right">
       <h2 class="fulltext">98% Casos de éxito</h2>
@@ -54,10 +55,30 @@ main: true
 
 <section class="snap" id="data4">
     <div class="introcard left">
-      <p>Estar debidamente actualizados en todo momento para dar una atención personalizada a cada litigio, demostrando que la honestidad produce frutos más sólidos que otras conductas contrarias a ella.</p>
+      <p>
+        <ul>
+          <li>Grupo México, S.A.B. de C.V.</li>
+          <li>Infraestructura y Transportes México, S.A. de C.V.</li>
+          <li>Compañía Perforadora México, S.A. de C.V.</li>
+          <li>Ferrocarril Mexicano, S.A. de C.V. (Ferromex).</li>
+          <li>Ferrosur, S.A. de C.V.</li>
+          <li>Altamira Terminal Portuaria, S.A. de C.V.</li>
+          <li>Cementos Mexicanos.</li>
+          <li>Gutsa, S.A. de C.V.</li>
+          <li>Constructora Gutiérrez de Velasco, S.A. de C.V.</li>
+          <li>Baker Hughes de México, S. de R.L. de C.V.</li>
+          <li>Transportes Elola, S.A. de C.V.</li>
+          <li>Onexpo Nacional, S.C.</li>
+          <li>McDonald’s Sistemas de México, S.A. de C.V.</li>
+          <li>Los Ángeles Times (México City Bureau).</li>
+          <li>Corporativo Internacional de Medios de Comunicación, S.A. de C.V.(Revista Contralínea).</li>
+          <li>Empacadora del Golfo, S.A. de C.V.</li>
+          <li>Diversas personas físicas.</li>
+        </ul>
+    </p>
     </div>
     <div class="introcard right">
-    <h2>Nuestros clientes</h2>
+    <h2>Algunos clientes</h2>
     </div>
 </section>
 

@@ -14,7 +14,7 @@ rightcard: Somos una firma de abogados con más de treinta años de experiencia 
 
 <section class="halfcard">
 <h2>Objetivo</h2>
-<p>Proporcionar patrocinio contencioso - administrativo y constitucional que satisfaga a nuestros clientes, alcance sus espectativas y colme las necesidades que puedan presentar las contingencias que le debatan en los litigios, cuestión que les permitirá el sano desarrollo de sus actividades y la resolución de problemas con calidad, profesionalismo, experiencia y enfoque en su satisfacción total.</p>
+<p>Proporcionar patrocinio contencioso - administrativo y constitucional que satisfaga a nuestros clientes, alcance sus espectativas y colme las necesidades que puedan presentar las contingencias que se debatan en los litigios, cuestión que les permitirá el sano desarrollo de sus actividades y la resolución de problemas con calidad, profesionalismo, experiencia y enfoque en su satisfacción total.</p>
 </section>
 
 <section class="halfcard">
