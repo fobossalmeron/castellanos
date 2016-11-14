@@ -5,7 +5,7 @@ permalink: /abogados/
 photo: dist/abogados.jpg
 abogados:
   - nombre: Gustavo Castellanos Díaz del Rivero
-    descripcion: Exfuncionario del Poder Judicial Federal, siempre adscrito a juzgados de distrito en materia administrativa, con experiencia de siete años en litigios contencioso - administrativos y constitucionales.
+    descripcion: Exfuncionario del Poder Judicial Federal, siempre adscrito a juzgados de distrito en materia administrativa, con experiencia de treinta años en litigios contencioso - administrativos y constitucionales.
     correo: gustavo.castellanos
   - nombre: Hugo F. Ramírez Rojas
     descripcion: Litigante en materia contenciosa administrativa y constitucional con experiencia de veinte años.

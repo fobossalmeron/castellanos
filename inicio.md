@@ -34,10 +34,7 @@ main: true
 
 <section class="snap" id="data2">
     <div class="introcard left">
-      <p>Derivado al estudio, preparación, análisis y desarrollo integral de nuestros profesionales del derecho,
-        contamos con un alto porcentaje de éxito en los litigios administrativos, fiscales y constitucionales que
-        plateamos, cuestión que ha colmado las expectativas de nuestros clientes y se traduce en la prestación de
-        servicios jurídicos de calidad, puntualidad, asertividad y confianza por el seguimiento puntual de los asuntos.</p>
+      <p>Derivado del estudio, preparación, análisis y desarrollo integral de nuestros profesionales del derecho, contamos con un alto porcentaje de éxito en los litigios administrativos, fiscales y constitucionales que planteamos, cuestión que ha colmado las expectativas de nuestros clientes  por el seguimiento puntual de los asuntos.</p>
     </div>
     <div class="introcard right">
       <h2 class="fulltext">98% Casos de éxito</h2>
@@ -49,7 +46,8 @@ main: true
     <h2>Desde 1986</h2>
     </div>
     <div class="introcard right">
-    <p>Contamos con más de 30 años de experiencia en litigios contencioso administrativos y constitucionales.</p>
+    <p>Contamos con más de 30 años de experiencia en litigios contencioso administrativos y constitucionales, respaldados por un sólido equipo de profesionales del derecho dedicados al estudio, preparación, análisis y desarrollo de los planteamientos y acciones jurídicas respectivas
+que se traduce en la prestación de servicios  de optima calidad.</p>
     </div>
 </section>
 
@@ -57,23 +55,20 @@ main: true
     <div class="introcard left">
       <p>
         <ul>
-          <li>Grupo México, S.A.B. de C.V.</li>
-          <li>Infraestructura y Transportes México, S.A. de C.V.</li>
-          <li>Compañía Perforadora México, S.A. de C.V.</li>
-          <li>Ferrocarril Mexicano, S.A. de C.V. (Ferromex).</li>
-          <li>Ferrosur, S.A. de C.V.</li>
-          <li>Altamira Terminal Portuaria, S.A. de C.V.</li>
-          <li>Cementos Mexicanos.</li>
-          <li>Gutsa, S.A. de C.V.</li>
-          <li>Constructora Gutiérrez de Velasco, S.A. de C.V.</li>
-          <li>Baker Hughes de México, S. de R.L. de C.V.</li>
-          <li>Transportes Elola, S.A. de C.V.</li>
-          <li>Onexpo Nacional, S.C.</li>
-          <li>McDonald’s Sistemas de México, S.A. de C.V.</li>
-          <li>Los Ángeles Times (México City Bureau).</li>
-          <li>Corporativo Internacional de Medios de Comunicación, S.A. de C.V.(Revista Contralínea).</li>
-          <li>Empacadora del Golfo, S.A. de C.V.</li>
-          <li>Diversas personas físicas.</li>
+          <li>Grupo México</li>
+          <li>Infraestructura y Transportes México</li>
+          <li>Compañía Perforadora México</li>
+          <li>Ferromex</li>
+          <li>Ferrosur</li>
+          <li>Altamira Terminal Portuaria</li>
+          <li>Cementos Mexicanos</li>
+          <li>Gutsa</li>
+          <li>Baker Hughes de México</li>
+          <li>Transportes Elola</li>
+          <li>McDonald’s Sistemas de México</li>
+          <li>Corporativo Internacional de Medios de Comunicación(Revista Contralínea)</li>
+          <li>Empacadora del Golfo</li>
+          <li>Diversas personas físicas</li>
         </ul>
     </p>
     </div>
