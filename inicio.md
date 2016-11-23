@@ -7,7 +7,7 @@ main: true
 <div class="homephoto"></div>
 <section class="snap homesection">
   <div id="logocontainer">
-    <img class="hometype" src="{{ site.baseurl }}img/type.svg">
+    <img class="hometype" src="{{ site.baseurl }}img/typewhite.svg">
     <h1 class="hometitle">Castellanos & asociados</h1>
     <div class="tels">
       <a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a>  <a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a>
@@ -53,7 +53,7 @@ que se traduce en la prestación de servicios  de optima calidad.</p>
 
 <section class="snap" id="data4">
     <div class="introcard left">
-      <p>
+      <p class="listmess">
         <ul>
           <li>Grupo México</li>
           <li>Infraestructura y Transportes México</li>
@@ -66,9 +66,6 @@ que se traduce en la prestación de servicios  de optima calidad.</p>
           <li>Baker Hughes de México</li>
           <li>Transportes Elola</li>
           <li>McDonald’s Sistemas de México</li>
-          <li>Corporativo Internacional de Medios de Comunicación(Revista Contralínea)</li>
-          <li>Empacadora del Golfo</li>
-          <li>Diversas personas físicas</li>
         </ul>
     </p>
     </div>

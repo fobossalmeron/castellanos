@@ -250,7 +250,7 @@ main {
   overflow: hidden; }
 
 .pagewrapper {
-  padding: 10%;
+  padding: 7%;
   max-width: 1300px;
   left: 50%;
   transform: translateX(-50%);
@@ -323,12 +323,12 @@ section {
     max-width: 50%; }
   #asidelogo span {
     border-radius: 50%;
-    border: 1px solid #1c1c1c;
+    border: 1px solid #FCFFFC;
     width: 45px;
     height: 45px;
     line-height: 2;
     text-align: center;
-    color: #424242;
+    color: #FCFFFC;
     margin: 3px;
     font-size: 22px;
     float: left;
@@ -378,11 +378,11 @@ section {
   left: 50%;
   transform: translateX(-50%); }
   .tels a {
-    color: #424242;
+    color: #FCFFFC;
     float: left; }
     .tels a::before {
       height: 20px;
-      background-color: #040F0F;
+      background-color: #FCFFFC;
       opacity: 0.1;
       width: 1px;
       content: ' ';
@@ -401,24 +401,32 @@ section {
   box-sizing: border-box; }
   .introcard h2 {
     font-size: 70px;
+    color: #FCFFFC;
     width: 80%;
     max-width: 300px;
     line-height: 1.2;
     box-sizing: border-box; }
   .introcard p {
     font-size: 17px;
+    color: #FCFFFC;
     width: 80%;
     max-width: 300px;
     padding-top: 5%;
     box-sizing: border-box; }
   .introcard ul {
-    font-size: 17px;
-    width: 80%;
+    font-size: 15px;
+    width: 70%;
     max-width: 300px;
+    color: #FCFFFC;
     padding-top: 5%;
     box-sizing: border-box;
     list-style: none;
     list-style-type: none; }
+
+.listmess {
+  height: 0;
+  padding: 0 !important;
+  margin: 0; }
 
 .left {
   padding-left: 10%; }
@@ -433,7 +441,7 @@ section {
     text-align: right; }
   .left::before {
     height: 200px;
-    background-color: #040F0F;
+    background-color: #FCFFFC;
     width: 1px;
     opacity: 0.1;
     content: ' ';
