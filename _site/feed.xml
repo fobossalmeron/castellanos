@@ -3,10 +3,10 @@
   <channel>
     <title>Castellanos &amp; asociados</title>
     <description>Firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo y constitucional.</description>
-    <link>http://localhost:4000//</link>
-    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Nov 2016 12:32:57 -0600</pubDate>
-    <lastBuildDate>Wed, 23 Nov 2016 12:32:57 -0600</lastBuildDate>
+    <link>http://castellanosasociados.com//</link>
+    <atom:link href="http://castellanosasociados.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 01 Dec 2016 16:54:51 -0600</pubDate>
+    <lastBuildDate>Thu, 01 Dec 2016 16:54:51 -0600</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -27,8 +27,8 @@
 
 </description>
         <pubDate>Tue, 12 Jul 2016 17:59:08 -0500</pubDate>
-        <link>http://localhost:4000//jekyll/update/2016/07/12/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000//jekyll/update/2016/07/12/welcome-to-jekyll.html</guid>
+        <link>http://castellanosasociados.com//jekyll/update/2016/07/12/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://castellanosasociados.com//jekyll/update/2016/07/12/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
