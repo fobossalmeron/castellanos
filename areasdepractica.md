@@ -7,10 +7,9 @@ longtitle: true
 ---
 
 <section class="cards">
-<div class="halfcard">
+<div class="card">
 
 <h2>Contencioso - Administrativo</h2>
-<!-- <p>Abarcando desde la interpretación de recursos administrativos hasta la promoción de juicios de amparo. Las áreas atendidas son todas aquellas dentro del derecho contencioso - administrativo en las que por un lado se encuentra una persona física o moral y por el otro una autoridad federal, estatal o municipal emisora de actos lescivos para los particulares.</p> -->
 <p>
 Las áreas atendidas son todas aquellas dentro del derecho contencioso - administrativo en las que por un lado se encuentra una persona física o moral y, por el otro, una autoridad federal, estatal o municipal emisora de actos que lesionan los derechos de particulares.
 <br><br>Abarca desde la interposición de recursos administrativos relacionados con:
@@ -25,12 +24,13 @@ Las áreas atendidas son todas aquellas dentro del derecho contencioso - adminis
 <li>Responsabilidad de Funcionarios Públicos</li>
 <li>Revocaciones de permisos, licencias, concesiones y autorizaciones</li>
 </ul>
-También incluye la promoción de juicios contenciosos – administrativos ante el Tribunal Federal de Justicia Administrativa y los Tribunales Administrativos de la Ciudad de México y los Estado de la República y, en su caso, la elaboración de amparos directos y/o la atención de revisiones fiscales.
+</p>
+<p>También incluye la promoción de juicios contenciosos – administrativos ante el Tribunal Federal de Justicia Administrativa y los Tribunales Administrativos de la Ciudad de México y los Estado de la República y, en su caso, la elaboración de amparos directos y/o la atención de revisiones fiscales.
 </p>
 
 </div>
 
-<div class="halfcard">
+<div class="card">
 
 <h2> Litigio Constitucional</h2>
 <p>Esta área incluye el amparo contra leyes, reglamentos o normas generales, bien federales, estatales o municipales contrarios a la Constitución Política Mexicana que generan agravios en contra de los particulares o transgreden sus derechos fundamentales.</p>

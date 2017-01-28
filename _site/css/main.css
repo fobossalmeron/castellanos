@@ -11,9 +11,9 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 15px/1.5 "Lora", serif;
+  font: 400 15px/1.5 "Trirong", serif;
   color: #424242;
-  background-color: #FCFFFC;
+  background-color: white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -37,6 +37,9 @@ ul, ol, dl, figure,
 img {
   max-width: 100%;
   vertical-align: middle; }
+
+p {
+  margin-left: 20px; }
 
 /**
  * Figures
@@ -128,21 +131,25 @@ pre {
  * Site header
  */
 header {
-  height: 80px;
   position: fixed;
-  background-color: #FCFFFC;
+  background-color: #FBF6EF;
   top: 0px;
   width: 100%;
+  height: 200px;
   left: 0;
-  padding: 12px 5%;
+  padding: 0;
   box-sizing: border-box;
   color: #424242;
   z-index: 3;
-  box-shadow: 0px -8px 15px #424242; }
+  box-shadow: 0px -4px 20px #794210; }
 
 #headerlogo {
-  height: 43px;
-  margin-top: 7px;
+  width: 400px;
+  float: left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50px 0;
   box-sizing: border-box; }
 
 #menuicon {
@@ -156,27 +163,40 @@ header {
     transition: .4s ease;
     transform-origin: 50% 50%; }
 
+.brownbackground {
+  background-color: #794210;
+  width: 100%;
+  float: left; }
+
 #desktopnav {
-  float: right;
-  line-height: 56px; }
+  float: left;
+  clear: both;
+  width: 880px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 40px;
+  height: 40px;
+  background-color: #794210;
+  box-sizing: border-box; }
   #desktopnav .page-link {
-    color: #424242;
+    color: #FCFFFC;
     float: left;
     font-size: 14px;
-    letter-spacing: .5px; }
-    #desktopnav .page-link:not(:last-child) {
-      margin-right: 15px; }
-      #desktopnav .page-link:not(:last-child)::before {
-        height: 30px;
-        background-color: #424242;
-        opacity: 0.1;
-        width: 1px;
-        content: ' ';
-        float: right;
-        clear: none;
-        display: block;
-        margin-top: 14px;
-        margin-left: 15px; }
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin: 0 3%; }
+    #desktopnav .page-link:not(:last-child)::before {
+      height: 30px;
+      background-color: #424242;
+      opacity: 0.1;
+      width: 1px;
+      content: ' ';
+      float: right;
+      clear: none;
+      display: block;
+      margin-top: 14px;
+      margin-left: 15px; }
 
 /**
  * Site footer
@@ -188,9 +208,10 @@ footer {
   box-sizing: border-box;
   position: relative; }
   footer a {
-    color: #D3D3D3; }
+    color: #794210;
+    text-decoration: underline; }
     footer a:visited {
-      color: #D3D3D3; }
+      color: #794210; }
     footer a:hover {
       color: #424242;
       text-decoration: none; }
@@ -205,7 +226,7 @@ footer {
   transform: translateX(-50%);
   margin-top: -10px; }
   .footerlogo path {
-    fill: #D3D3D3; }
+    fill: #794210; }
 
 .footer-heading {
   font-size: 18px;
@@ -214,15 +235,15 @@ footer {
 .contact-list {
   list-style: none;
   margin-left: 0;
-  color: #494949; }
+  color: #794210; }
   .contact-list li {
     padding-bottom: 1.5%; }
 
 .footer-col-wrapper {
   font-size: 13px;
   padding: 5%;
-  background-color: #1c1c1c;
-  box-shadow: 0px 8px 15px #424242; }
+  background-color: #FBF6EF;
+  box-shadow: 0px 8px 15px #794210; }
 
 .footer-col {
   float: left;
@@ -243,15 +264,15 @@ footer {
  * Page content
  */
 main {
-  margin-top: 50px;
+  margin-top: 150px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 3%;
+  padding: 0;
   overflow: hidden; }
 
 .pagewrapper {
-  padding: 7%;
-  max-width: 1300px;
+  padding: 5%;
+  max-width: 900px;
   left: 50%;
   transform: translateX(-50%);
   min-height: 100%;
@@ -260,13 +281,27 @@ main {
   float: left;
   width: 100%; }
 
+.spanmargin {
+  margin-left: 20px;
+  font-size: 14px; }
+
 section {
   float: left;
   width: 100%;
   box-sizing: border-box;
   transition: 0.3s ease; }
   section h2 {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 18px; }
+    section h2::before {
+      content: ' ';
+      width: 6px;
+      height: 24px;
+      left: 46px;
+      float: left;
+      margin-right: 10px;
+      display: block;
+      background-color: #794210; }
 
 .homesection {
   padding-top: 82px !important;
@@ -274,13 +309,13 @@ section {
 
 .homephoto {
   background-image: url("/img/dist/fondoprincipal.jpg");
-  background-position: top left;
+  background-position: bottom center;
   background-size: cover;
   padding: 30%;
   min-height: 100%;
   position: fixed;
   z-index: -1;
-  width: 94%;
+  width: 100%;
   box-sizing: border-box; }
 
 .pagephoto {
@@ -464,6 +499,12 @@ section {
     float: left;
     text-align: left; }
 
+.card {
+  width: 100%;
+  padding-top: 5%;
+  float: left;
+  box-sizing: border-box; }
+
 .halfcard {
   width: 50%;
   min-width: 280px;
@@ -473,7 +514,8 @@ section {
   .halfcard:nth-child(2n+2) {
     padding-left: 2.5%; }
   .halfcard:nth-child(2n+1) {
-    padding-right: 2.5%; }
+    padding-right: 4.5%;
+    clear: left; }
 
 .rightcard {
   width: 50%;
@@ -513,11 +555,12 @@ section {
   font-size: 24px; }
 
 form {
-  margin-top: 15px; }
+  margin-top: 15px;
+  margin-left: 20px; }
 
 input, textarea {
   border: 0;
-  border-bottom: 1px solid #e9ece9;
+  border-bottom: 1.5px solid #794210;
   background-color: #FCFFFC;
   width: 100%;
   font-family: inherit;
@@ -530,12 +573,12 @@ textarea {
 .submitbutton {
   font-family: inherit;
   font-size: inherit;
-  background-color: #1c1c1c;
+  background-color: #794210;
   color: #FCFFFC;
   padding: 10px; }
 
 .pagetitle {
-  font-size: 65px;
+  font-size: 45px;
   text-align: left;
   line-height: 1.2;
   font-weight: bold;
@@ -545,7 +588,8 @@ textarea {
 
 #map {
   width: 100%;
-  height: 400px;
+  height: 310px;
+  margin-bottom: 18px;
   background-color: grey; }
 
 /**
@@ -615,7 +659,8 @@ textarea {
   position: relative;
   width: 100%;
   top: -110%;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #mobilenav {
   width: 100%;
@@ -650,10 +695,6 @@ textarea {
   transform: translateY(0%); }
 
 @media screen and (max-width: 1000px) {
-  #headerlogo {
-    height: 35px;
-    margin-top: 11px; }
-
   .introcard h2 {
     font-size: 50px; }
   .introcard p {
@@ -662,12 +703,19 @@ textarea {
   .thirdline::before {
     height: 200px; } }
 @media screen and (max-width: 900px) {
+  form {
+    width: 90%; }
+
+  #headerlogo {
+    width: 200px;
+    padding-top: 5px; }
+
   header {
     height: 60px;
     padding: 11px 5%; }
 
-  #headerlogo {
-    margin-top: 2px; }
+  main {
+    margin-top: 50px; }
 
   #menuicon {
     display: block; }
@@ -684,8 +732,8 @@ textarea {
     padding: 10% 5% 5% 5%; } }
 @media screen and (max-width: 800px) {
   #map {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0 auto 38px auto;
     height: 270px; }
 
   .rightcard {

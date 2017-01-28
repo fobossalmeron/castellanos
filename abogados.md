@@ -31,10 +31,10 @@ abogados:
 ---
 <span class="spanspacer"></span>
 {% for abogado in page.abogados %}
-<section class="thirdcard">
+<section class="halfcard">
 <h2>{{ abogado.nombre }}</h2>
 <p>{{ abogado.descripcion }}</p>
-<span><b>{{ abogado.correo }}</b> @castellanosasociados.com</span>
+<span class="spanmargin"><b>{{ abogado.correo }}</b> @castellanosasociados.com</span>
 </section>
 {% endfor %}
 

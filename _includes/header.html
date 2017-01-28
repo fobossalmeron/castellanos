@@ -5,14 +5,16 @@
     <a href="#" id="menuicon">
         {% include menuicon.html %}
     </a>
-
+    <div class="brownbackground">
     <nav id="desktopnav">
+          <a class="page-link" href="/">Inicio</a>
         {% for my_page in site.pages %}
           {% if my_page.title and my_page.indexed != false %}
           <a class="page-link" href="{{ my_page.url }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
     </nav>
+  </div>
 
 </header>
 

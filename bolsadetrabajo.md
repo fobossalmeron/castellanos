@@ -6,7 +6,7 @@ photo: dist/bolsadetrabajo.jpg
 longtitle: true
 ---
 <section class="cards">
-<div class="halfcard">
+<div class="card">
 
 <h2> Requisitos para Abogados:</h2>
 <ul>
@@ -19,7 +19,7 @@ longtitle: true
 
 </div>
 
-<div class="halfcard">
+<div class="card">
 
 <h2> Requisitos para Estudiantes:</h2>
 <ul>
