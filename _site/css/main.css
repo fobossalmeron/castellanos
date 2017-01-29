@@ -125,7 +125,9 @@ pre {
   padding: 10px;
   position: relative;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  margin-left: 0;
+  color: #794210; }
 
 /**
  * Site header
@@ -182,10 +184,10 @@ header {
   #desktopnav .page-link {
     color: #FCFFFC;
     float: left;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: .5px;
     text-transform: uppercase;
-    margin: 0 3%; }
+    margin: 0 4%; }
     #desktopnav .page-link:not(:last-child)::before {
       height: 30px;
       background-color: #424242;
@@ -326,6 +328,9 @@ section {
   padding: 10%; }
 
 #logocontainer {
+  opacity: 0; }
+
+#logocontainer2 {
   width: 80%;
   min-width: 250px;
   max-width: 550px;
@@ -431,32 +436,29 @@ section {
       color: #424242; }
 
 .introcard {
-  width: 45%;
   float: left;
   box-sizing: border-box; }
   .introcard h2 {
-    font-size: 70px;
+    font-size: 25px;
     color: #FCFFFC;
-    width: 80%;
     max-width: 300px;
     line-height: 1.2;
     box-sizing: border-box; }
+    .introcard h2::before {
+      display: none; }
   .introcard p {
-    font-size: 17px;
+    font-size: 16px;
     color: #FCFFFC;
-    width: 80%;
-    max-width: 300px;
-    padding-top: 5%;
+    width: 100%;
     box-sizing: border-box; }
   .introcard ul {
     font-size: 15px;
-    width: 70%;
-    max-width: 300px;
     color: #FCFFFC;
-    padding-top: 5%;
     box-sizing: border-box;
     list-style: none;
-    list-style-type: none; }
+    list-style-type: none;
+    border-left: 1px solid #794210;
+    padding-left: 20px; }
 
 .listmess {
   height: 0;
@@ -464,33 +466,23 @@ section {
   margin: 0; }
 
 .left {
-  padding-left: 10%; }
+  padding-left: 4%;
+  max-width: 35%; }
   .left h2 {
-    text-align: right;
-    float: right; }
+    text-align: left;
+    float: left; }
   .left p {
     float: right;
     text-align: right; }
   .left ul {
     float: right;
     text-align: right; }
-  .left::before {
-    height: 200px;
-    background-color: #FCFFFC;
-    width: 1px;
-    opacity: 0.1;
-    content: ' ';
-    float: right;
-    clear: none;
-    display: block;
-    margin: 0% 9.5%; }
 
 .thirdline::before {
   height: 250px; }
 
 .right {
-  padding-right: 10%;
-  margin-right: 10%; }
+  max-width: 65%; }
   .right h2 {
     text-align: left;
     float: left;
@@ -498,6 +490,16 @@ section {
   .right p {
     float: left;
     text-align: left; }
+    .right p::before {
+      height: 200px;
+      background-color: #794210;
+      width: 1px;
+      opacity: 1;
+      content: ' ';
+      float: left;
+      clear: none;
+      display: block;
+      margin-right: 20px; }
 
 .card {
   width: 100%;
@@ -608,7 +610,11 @@ textarea {
 
 .mainhome section {
   opacity: 0;
-  padding-top: 13%; }
+  padding-top: 250px;
+  max-width: 900px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%); }
   .mainhome section p, .mainhome section h2 {
     transition: 0.5s ease; }
 
@@ -695,14 +701,13 @@ textarea {
   transform: translateY(0%); }
 
 @media screen and (max-width: 1000px) {
-  .introcard h2 {
-    font-size: 50px; }
-  .introcard p {
-    font-size: 15px; }
-
-  .thirdline::before {
-    height: 200px; } }
+  .right {
+    padding-right: 10%; } }
 @media screen and (max-width: 900px) {
+  .introcard {
+    max-width: 100%;
+    width: 100%; }
+
   form {
     width: 90%; }
 
@@ -723,13 +728,19 @@ textarea {
   #desktopnav {
     display: none; }
 
+  .mainhome section {
+    padding-top: 125px; }
+
   .halfcard {
     width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important; }
 
   .pagewrapper {
-    padding: 10% 5% 5% 5%; } }
+    padding: 10% 5% 5% 5%; }
+
+  .right {
+    padding-right: 35%; } }
 @media screen and (max-width: 800px) {
   #map {
     width: 90%;
@@ -758,26 +769,35 @@ textarea {
   .footer-col-2 {
     width: 100%; }
 
-  .mainhome section {
-    padding-top: 75px; }
-
   .introcard {
     width: 100%; }
     .introcard h2 {
       width: 100%;
+      max-width: 100%;
       text-align: center; }
     .introcard p {
       width: 100%;
+      margin-left: 0px;
       text-align: center;
       max-width: 100%; }
+    .introcard ul {
+      text-align: center;
+      margin-left: 0;
+      padding-left: 0;
+      border: none; }
 
   .left {
-    padding: 0 10%; }
+    padding: 0; }
     .left::before {
       display: none; }
 
   .right {
-    padding: 0 10%; }
+    padding: 8%; }
+    .right p {
+      margin: 0px; }
+      .right p::before {
+        content: '';
+        display: none; }
 
   #asidelogo {
     right: 10px;
