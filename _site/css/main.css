@@ -243,7 +243,7 @@ footer {
 
 .footer-col-wrapper {
   font-size: 13px;
-  padding: 5%;
+  padding: 2%;
   background-color: #FBF6EF;
   box-shadow: 0px 8px 15px #794210; }
 
@@ -274,7 +274,7 @@ main {
 
 .pagewrapper {
   padding: 5%;
-  max-width: 900px;
+  max-width: 935px;
   left: 50%;
   transform: translateX(-50%);
   min-height: 100%;
@@ -298,10 +298,11 @@ section {
     section h2::before {
       content: ' ';
       width: 6px;
-      height: 24px;
+      height: 16px;
+      margin-top: 6px;
       left: 46px;
       float: left;
-      margin-right: 10px;
+      margin-right: 7px;
       display: block;
       background-color: #794210; }
 
@@ -610,7 +611,8 @@ textarea {
 
 .mainhome section {
   opacity: 0;
-  padding-top: 250px;
+  padding-top: 30%;
+  clear: both;
   max-width: 900px;
   left: 50%;
   position: relative;
@@ -619,7 +621,8 @@ textarea {
     transition: 0.5s ease; }
 
 #asidelogo #up {
-  opacity: 0; }
+  opacity: 0;
+  pointer-events: none; }
 
 #data1 h2 {
   transform: translateY(-150%); }
@@ -644,7 +647,8 @@ textarea {
 .slidein {
   transform: translateX(0) translateY(0) !important; }
   .slidein #up {
-    opacity: 1 !important; }
+    opacity: 1 !important;
+    pointer-events: auto !important; }
 
 .slidefooter {
   bottom: 175px !important; }
@@ -655,7 +659,7 @@ textarea {
 
 .parallaxParent {
   width: 100%;
-  height: 320px;
+  height: 370px;
   float: left;
   overflow: hidden;
   position: relative; }
@@ -664,7 +668,7 @@ textarea {
   height: 380px;
   position: relative;
   width: 100%;
-  top: -110%;
+  top: -78%;
   background-size: cover;
   background-position: center center; }
 
@@ -700,6 +704,9 @@ textarea {
 #mobilenav.open {
   transform: translateY(0%); }
 
+@media screen and (max-width: 1300px) {
+  .mainhome section {
+    padding-top: 300px; } }
 @media screen and (max-width: 1000px) {
   .right {
     padding-right: 10%; } }
@@ -740,7 +747,10 @@ textarea {
     padding: 10% 5% 5% 5%; }
 
   .right {
-    padding-right: 35%; } }
+    padding-right: 35%; }
+
+  .parallaxChild {
+    top: -96%; } }
 @media screen and (max-width: 800px) {
   #map {
     width: 90%;

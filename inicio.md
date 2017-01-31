@@ -42,7 +42,7 @@ main: true
 
 <section class="snap" id="data3">
     <div class="introcard left">
-      <h2 class="fulltext">98% Casos de éxito</h2>
+      <h2 class="fulltext">98% casos de éxito</h2>
     </div>
     <div class="introcard right">
       <p>Derivado del estudio, preparación, análisis y desarrollo integral de nuestros profesionales del derecho, contamos con un alto porcentaje de éxito en los litigios administrativos, fiscales y constitucionales que planteamos, cuestión que ha colmado las expectativas de nuestros clientes  por el seguimiento puntual de los asuntos.</p>

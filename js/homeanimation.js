@@ -4,7 +4,7 @@ var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: .
 var logoScene = new ScrollMagic.Scene({triggerElement: "#logocontainer", offset:100})
         .setClassToggle("#logocontainer", "disapear")
         .addTo(controller);
-var logoScene2 = new ScrollMagic.Scene({triggerElement: "#logocontainer"})
+var logoScene2 = new ScrollMagic.Scene({triggerElement: "#data2"})
         .setClassToggle('#asidelogo', 'slidein')
         .addTo(controller);
 
