@@ -39,7 +39,7 @@ img {
   vertical-align: middle; }
 
 p {
-  margin-left: 20px; }
+  margin-left: 14px; }
 
 /**
  * Figures
@@ -284,7 +284,7 @@ main {
   width: 100%; }
 
 .spanmargin {
-  margin-left: 20px;
+  margin-left: 14px;
   font-size: 14px; }
 
 section {
@@ -559,7 +559,7 @@ section {
 
 form {
   margin-top: 15px;
-  margin-left: 20px; }
+  margin-left: 14px; }
 
 input, textarea {
   border: 0;
