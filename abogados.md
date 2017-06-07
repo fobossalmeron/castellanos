@@ -30,7 +30,7 @@ abogados:
     correo: penelope.hernandez
   - nombre: Eduardo Olivelia Hernández
     descripcion: Exfuncionario del ahora Tribunal Federal de Justicia Administrativa, catedrático de las Maestrías de Derecho Administrativo y Derecho Fiscal en el Centro de Estudios Tecnológicos y Universitarios IAMP.
-    correo: eduardo.olivelia
+    correo: eduardo.olivelia 
 ---
 <span class="spanspacer"></span>
 {% for abogado in page.abogados %}
