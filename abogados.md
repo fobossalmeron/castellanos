@@ -12,22 +12,25 @@ abogados:
     correo: hugo.ramirez
   - nombre: Elia Cid Sebastián
     descripcion: Exfuncionaria del Poder Judicial de la Federación, adscrita a juzgados de distrito y Tribunales Colegiados de Circuito, todos en materia administrativa y constitucional, con experiencia en litigios de estas materias por doce años.
-    correo: elia.sebastian
+    correo: elia.cid
   - nombre: Luis Fernando Lazcano y Ramírez
     descripcion: Exfuncionario del ahora Tribunal Federal de Justicia Administrativa, experiencia en litigios contencioso - administrativos y constitucionales por veintidos años.
     correo: fernando.lazcano
   - nombre: José Luis Pérez Martínez
-    descripcion: Abogado con experiencia en litigios contencioso - administrativo y constitucionales por veinte años
+    descripcion: Abogado con experiencia en litigios contencioso - administrativo y constitucionales por quince años
     correo: joseluis.perez
-  - nombre: Ana Areli Chávez Rodríguez
+  - nombre: Ana Arely Chávez Rodríguez
     descripcion: Abogada con experiencia en litigios contencioso - administrativo y constitucionales por diez años.
-    correo: areli.chavez
+    correo: arely.chavez
   - nombre: Gustavo Flores Trujillo
     descripcion: Abogado con experiencia en litigios contencioso - administrativo y constitucionales por ocho años.
     correo: gustavo.flores
-  - nombre: Penélope Yadira Hernández Canario
+  - nombre: Penélope Yadira Hernández Calvario
     descripcion: Abogada con experiencia en litigios contencioso - administrativo y constitucionales por cinco años.
     correo: penelope.hernandez
+  - nombre: Eduardo Olivelia Hernández
+    descripcion: Exfuncionario del ahora Tribunal Federal de Justicia Administrativa, catedrático de las Maestrías de Derecho Administrativo y Derecho Fiscal en el Centro de Estudios Tecnológicos y Universitarios IAMP.
+    correo: eduardo.olivelia
 ---
 <span class="spanspacer"></span>
 {% for abogado in page.abogados %}
