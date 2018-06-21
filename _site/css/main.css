@@ -286,6 +286,8 @@ main {
 .spanmargin {
   margin-left: 14px;
   font-size: 14px; }
+  .spanmargin b {
+    margin-right: -2px; }
 
 section {
   float: left;
