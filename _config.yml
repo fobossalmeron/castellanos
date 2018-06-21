@@ -9,7 +9,7 @@
 title: Castellanos & Asociados
 email: contacto@castellanosasociados.com
 description: Firma de abogados con más de treinta años de experiencia en derecho contencioso administrativo y constitucional.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://castellanosasociados.com" # the base hostname & protocol for your site
 tel1: (55) 55 24 24 14
 tel2: (55) 55 34 71 77
